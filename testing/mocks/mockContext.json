@@ -1,0 +1,89 @@
+{
+  "type": "user",
+  "settings": {},
+  "data": {
+    "user": {
+      "id": "1000",
+      "name": "Cormac McCarthy",
+      "firstName": "Dorcas",
+      "lastName": "McCullough",
+      "titlePrefix": "Ms.",
+      "isDisabled": false,
+      "isAgent": false,
+      "isConfirmed": true,
+      "emails": [
+        "cormac.mccarthy@example.org",
+        "david.anjonrin@deskpro.com"
+      ],
+      "primaryEmail": "cormac.mccarthy@example.org",
+      "customFields": {
+        "field.1": {
+          "title": "Select",
+          "value": ""
+        },
+        "field.5": {
+          "title": "Multiselect",
+          "value": ""
+        },
+        "field.9": {
+          "title": "Date",
+          "value": null
+        },
+        "field.10": {
+          "title": "DateTime",
+          "value": null
+        },
+        "field.11": {
+          "title": "Textarea",
+          "value": ""
+        },
+        "field.12": {
+          "title": "Toggle people field",
+          "value": null
+        },
+        "field.13": {
+          "title": "Currency people field",
+          "value": ""
+        }
+      },
+      "language": "English",
+      "locale": "en-US"
+    },
+    "app": {
+      "id": "27",
+      "instanceId": "3",
+      "name": "@deskpro-apps/jamf",
+      "title": "Jamf Pro App",
+      "description": ""
+    },
+    "env": {
+      "release": "0.0.0",
+      "releaseBuildTime": 0,
+      "envId": "production"
+    },
+    "currentAgent": {
+      "id": "1",
+      "emails": [
+        "admin@deskprodev.com"
+      ],
+      "primaryEmail": "admin@deskprodev.com",
+      "name": "John Doe",
+      "firstName": "John",
+      "lastName": "Doe",
+      "isAgent": true,
+      "isAdmin": true,
+      "isOnline": true,
+      "isChatOnline": true,
+      "avatarUrl": "https://deskpro-product-master.ci.next.deskprodemo.com/file.php/63AAAAAAAAAAAAAAA0/150-10.jpg?access_token=rv981z-gxexxehzgk-b4cd86e86eaa0182e8bbad06cbee9d1b8caac441",
+      "language": "English",
+      "locale": "en-US",
+      "userGroups": [],
+      "teams": [
+        {
+          "id": "1",
+          "name": "Support"
+        }
+      ]
+    }
+  }
+}

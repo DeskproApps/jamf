@@ -1,26 +1,41 @@
 {
-  "name": "@deskpro-apps/my-app",
-  "title": "My App",
-  "description": "My Deskpro app",
-  "version": "0.0.5",
+  "name": "@deskpro-apps/jamf",
+  "title": "Jamf Pro App",
+  "description": "",
+  "version": "0.0.0",
   "scope": "agent",
   "isSingleInstall": false,
   "hasDevMode": true,
-  "targets": [{ "target": "ticket_sidebar", "entrypoint": "index.html" }],
+  "serveUrl": "https://apps-cdn.deskpro-service.com/__name__/__version__",
+  "targets": [{ "target": "user_sidebar", "entrypoint": "index.html" }],
+  "entityAssociations": {
+    "linkedJamfDevices": {
+      "entity": "person",
+      "type": "external_id",
+      "title": "Linked Jamf Devices"
+    }
+  },
   "settings": {
-    "example": {
-      "title": "Example Setting",
-      "description": "Example backend only setting",
+    "instance_url": {
+      "title": "Jamf Instance URL",
+      "description": "Enter the URL of your Jamf Pro instance, or \"https://<my_company>.jamfcloud.com\"",
+      "validationPattern": "^https?:\\/\\/.+\\..+\\w$",
       "type": "string",
-      "isRequired": false,
-      "isBackendOnly": true
+      "isRequired": true,
+      "isBackendOnly": false,
+      "order": 10
     }
   },
   "proxy": {
     "whitelist": [
       {
-        "url": "https://jsonplaceholder.typicode.com/.*",
-        "methods": ["GET"],
+        "url": "__instance_url__/api/oauth/.*",
+        "methods": ["POST"],
+        "timeout": 20
+      },
+      {
+        "url": "__instance_url__/api/v1/.*",
+        "methods": ["GET", "POST"],
         "timeout": 20
       }
     ]

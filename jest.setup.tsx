@@ -21,21 +21,6 @@ global.TextDecoder = TextDecoder;
 //@ts-ignore
 global.React = React;
 
-const context = {
-  type: "ticket",
-  settings: {},
-  data: {
-    ticket: {
-      id: "215",
-      subject: "Big ticket",
-      permalinkUrl: "https://permalink.url",
-    },
-    app: {},
-    env: {},
-    currentAgent: {},
-  },
-};
-
 jest.mock("@deskpro/app-sdk", () => ({
   ...jest.requireActual("@deskpro/app-sdk"),
   useDeskproAppClient: () => ({ client: mockClient }),

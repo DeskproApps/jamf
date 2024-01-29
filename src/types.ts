@@ -61,6 +61,9 @@ export type UserContext = Context<UserData, Maybe<Settings>>;
 
 export type NavigateToChangePage = { type: "changePage", path: To };
 
+export type LogoutPayload = { type: "logout" };
+
 export type EventPayload =
   | NavigateToChangePage
+  | LogoutPayload
 ;

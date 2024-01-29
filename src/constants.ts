@@ -15,15 +15,14 @@ export const DEFAULT_ERROR = "There was an error!";
 
 export const ACCESS_TOKEN_PATH = "oauth2/access_token";
 
-export const REFRESH_TOKEN_PATH = "oauth2/refresh_token";
-
 export const placeholders = {
   INSTANCE_URL: "__instance_url__",
   ACCESS_TOKEN: `[user[${ACCESS_TOKEN_PATH}]]`,
-  REFRESH_TOKEN: `[user[${REFRESH_TOKEN_PATH}]]`,
+  CLIENT_ID: "__client_id__",
+  CLIENT_SECRET: "__client_secret__",
 };
 
 /** Jamf Pro */
-export const AUTH_UTL = `${placeholders.INSTANCE_URL}/api/oauth`;
+export const AUTH_URL = `${placeholders.INSTANCE_URL}/api/oauth`;
 
 export const BASE_URL = `${placeholders.INSTANCE_URL}/api/v1`;

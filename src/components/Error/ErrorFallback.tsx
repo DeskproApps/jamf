@@ -1,3 +1,4 @@
+import { get } from "lodash";
 import { Stack } from "@deskpro/deskpro-ui";
 import { DEFAULT_ERROR } from "../../constants";
 import { JamfError } from "../../services/jamf";
@@ -10,12 +11,14 @@ type Props = Omit<FallbackProps, "error"> & {
 };
 
 const ErrorFallback: FC<Props> = ({ error }) => {
-  const message = DEFAULT_ERROR;
+  let message = DEFAULT_ERROR;
   let consoleMessage;
 
 
   if (error instanceof JamfError) {
-    //..
+    message = get(error, ["data", "error_description"])
+      || get(error, ["data", "error"])
+      || DEFAULT_ERROR;
   }
 
   // eslint-disable-next-line no-console

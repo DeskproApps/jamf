@@ -1,5 +1,4 @@
-import { useMemo } from "react";
-import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import { useDebouncedCallback } from "use-debounce";
 import { match } from "ts-pattern";
 import {
@@ -8,16 +7,21 @@ import {
   useDeskproAppClient,
   useDeskproAppEvents,
 } from "@deskpro/app-sdk";
+import { useLogout } from "./hooks";
 import { isNavigatePayload } from "./utils";
-import { LoadingAppPage } from "./pages";
+import {
+  HomePage,
+  LoginPage,
+  LoadingAppPage,
+  LinkDevicesPage,
+} from "./pages";
 import type { FC } from "react";
 import type { EventPayload } from "./types";
 
 const App: FC = () => {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
   const { client } = useDeskproAppClient();
-  const isAdmin = useMemo(() => pathname.includes("/admin/"), [pathname]);
+  const { logout, isLoading } = useLogout();
 
   useDeskproElements(({ registerElement }) => {
     registerElement("refresh", { type: "refresh_button" });
@@ -30,6 +34,7 @@ const App: FC = () => {
           navigate(payload.path);
         }
       })
+      .with("logout", logout)
       .run();
   }, 500);
 
@@ -42,7 +47,7 @@ const App: FC = () => {
     onElementEvent: debounceElementEvent,
   }, [client]);
 
-  if (!client) {
+  if (!client || isLoading) {
     return (
       <LoadingSpinner/>
     );
@@ -51,9 +56,12 @@ const App: FC = () => {
   return (
     <>
       <Routes>
+        <Route path="/login" element={<LoginPage/>}/>
+        <Route path="/home" element={<HomePage/>}/>
+        <Route path="/devices/link" element={<LinkDevicesPage/>} />
         <Route index element={<LoadingAppPage/>} />
       </Routes>
-      {!isAdmin && (<><br/><br/><br/></>)}
+      <br/><br/><br/>
     </>
   );
 };

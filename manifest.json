@@ -1,6 +1,6 @@
 {
   "name": "@deskpro-apps/jamf",
-  "title": "Jamf Pro App",
+  "title": "Jamf Pro",
   "description": "",
   "version": "0.0.1",
   "scope": "agent",
@@ -24,6 +24,20 @@
       "isRequired": true,
       "isBackendOnly": false,
       "order": 10
+    },
+    "client_id": {
+      "title": "Client ID",
+      "type": "string",
+      "isRequired": true,
+      "isBackendOnly": false,
+      "order": 20
+    },
+    "client_secret": {
+      "title": "Client Secret",
+      "type": "string",
+      "isRequired": true,
+      "isBackendOnly": true,
+      "order": 30
     }
   },
   "proxy": {

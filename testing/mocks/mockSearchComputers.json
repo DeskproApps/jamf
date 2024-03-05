@@ -1,0 +1,299 @@
+{
+  "totalCount": 1,
+  "results": [
+    {
+      "id": "1",
+      "udid": "159A9938-7A84-5061-BE02-5DBEFC944BD8",
+      "general": {
+        "name": "ilia's mac book",
+        "lastIpAddress": "188.163.114.134",
+        "lastReportedIp": "192.168.88.70",
+        "jamfBinaryVersion": "11.2.1-t1707143529",
+        "platform": "Mac",
+        "barcode1": null,
+        "barcode2": null,
+        "assetTag": null,
+        "remoteManagement": {
+          "managed": true,
+          "managementUsername": null
+        },
+        "supervised": true,
+        "mdmCapable": {
+          "capable": false,
+          "capableUsers": []
+        },
+        "reportDate": "2024-03-05T08:37:25.063Z",
+        "lastContactTime": "2024-03-07T19:44:08.001Z",
+        "lastCloudBackupDate": null,
+        "lastEnrolledDate": "2024-03-05T08:14:09.24Z",
+        "mdmProfileExpiration": "2026-03-05T08:13:45Z",
+        "initialEntryDate": "2024-03-05",
+        "distributionPoint": null,
+        "site": {
+          "id": "-1",
+          "name": "None"
+        },
+        "itunesStoreAccountActive": false,
+        "enrolledViaAutomatedDeviceEnrollment": false,
+        "userApprovedMdm": false,
+        "enrollmentMethod": null,
+        "declarativeDeviceManagementEnabled": false,
+        "managementId": "4082ef23-22a5-4b78-83e1-1dfee3a9d575",
+        "extensionAttributes": []
+      },
+      "diskEncryption": null,
+      "localUserAccounts": null,
+      "purchasing": null,
+      "printers": null,
+      "storage": {
+        "bootDriveAvailableSpaceMegabytes": 783044,
+        "disks": [
+          {
+            "id": "2",
+            "device": "disk0",
+            "model": "APPLE SSD AP1024N",
+            "revision": "1306",
+            "serialNumber": "C02949300HANK3M1J",
+            "sizeMegabytes": 1000555,
+            "smartStatus": "Verified",
+            "type": "NO",
+            "partitions": [
+              {
+                "name": "Update",
+                "sizeMegabytes": 1000240,
+                "availableMegabytes": 783044,
+                "partitionType": "OTHER",
+                "percentUsed": 1,
+                "fileVault2State": "UNENCRYPTED",
+                "fileVault2ProgressPercent": 0,
+                "lvmManaged": false
+              },
+              {
+                "name": "Preboot",
+                "sizeMegabytes": 1000240,
+                "availableMegabytes": 783044,
+                "partitionType": "OTHER",
+                "percentUsed": 1,
+                "fileVault2State": "UNENCRYPTED",
+                "fileVault2ProgressPercent": 0,
+                "lvmManaged": false
+              },
+              {
+                "name": "VM",
+                "sizeMegabytes": 1000240,
+                "availableMegabytes": 783044,
+                "partitionType": "OTHER",
+                "percentUsed": 1,
+                "fileVault2State": "UNENCRYPTED",
+                "fileVault2ProgressPercent": 0,
+                "lvmManaged": false
+              },
+              {
+                "name": "MacintoshHD (Boot Partition)",
+                "sizeMegabytes": 1000240,
+                "availableMegabytes": 783044,
+                "partitionType": "BOOT",
+                "percentUsed": 2,
+                "fileVault2State": "ENCRYPTED",
+                "fileVault2ProgressPercent": 100,
+                "lvmManaged": false
+              },
+              {
+                "name": "Data",
+                "sizeMegabytes": 1000240,
+                "availableMegabytes": 783044,
+                "partitionType": "OTHER",
+                "percentUsed": 21,
+                "fileVault2State": "ENCRYPTED",
+                "fileVault2ProgressPercent": 100,
+                "lvmManaged": false
+              }
+            ]
+          }
+        ]
+      },
+      "applications": null,
+      "userAndLocation": null,
+      "configurationProfiles": null,
+      "services": null,
+      "plugins": null,
+      "hardware": {
+        "make": "Apple",
+        "model": "MacBook Pro (16-inch, 2019)",
+        "modelIdentifier": "MacBookPro16,1",
+        "serialNumber": "C02ZW1CNMD6W",
+        "processorSpeedMhz": 2300,
+        "processorCount": 1,
+        "coreCount": 8,
+        "processorType": "8-Core Intel Core i9",
+        "processorArchitecture": "x86_64",
+        "busSpeedMhz": 0,
+        "cacheSizeKilobytes": 16384,
+        "networkAdapterType": "IEEE80211",
+        "macAddress": "F8:FF:C2:47:F0:93",
+        "altNetworkAdapterType": "Ethernet",
+        "altMacAddress": "82:1D:CF:E2:88:01",
+        "totalRamMegabytes": 32768,
+        "openRamSlots": 0,
+        "batteryCapacityPercent": 84,
+        "smcVersion": null,
+        "nicSpeed": "100 Mbps",
+        "opticalDrive": null,
+        "bootRom": "2020.61.1.0.0 (iBridge: 21.16.2057.0.0,0)",
+        "bleCapable": false,
+        "supportsIosAppInstalls": false,
+        "appleSilicon": false,
+        "extensionAttributes": []
+      },
+      "certificates": null,
+      "attachments": null,
+      "packageReceipts": null,
+      "fonts": null,
+      "security": null,
+      "operatingSystem": {
+        "name": "macOS",
+        "version": "14.2.1",
+        "build": "23C71",
+        "supplementalBuildVersion": "23C71",
+        "rapidSecurityResponse": null,
+        "activeDirectoryStatus": "Not Bound",
+        "fileVault2Status": "BOOT_ENCRYPTED",
+        "softwareUpdateDeviceId": "J152FAP",
+        "extensionAttributes": []
+      },
+      "licensedSoftware": null,
+      "softwareUpdates": null,
+      "groupMemberships": null,
+      "extensionAttributes": null,
+      "contentCaching": null,
+      "ibeacons": null
+    },
+    {
+      "id": "64",
+      "udid": "e1e13f36-1f18-4b5a-85c7-ab65b8907faf",
+      "general": {
+        "name": "Bitegrove",
+        "lastIpAddress": "210.210.20.32",
+        "lastReportedIp": null,
+        "jamfBinaryVersion": "9.72",
+        "platform": "Mac",
+        "barcode1": null,
+        "barcode2": null,
+        "assetTag": null,
+        "remoteManagement": {
+          "managed": false,
+          "managementUsername": null
+        },
+        "supervised": false,
+        "mdmCapable": {
+          "capable": false,
+          "capableUsers": []
+        },
+        "reportDate": "2024-03-05T08:57:43.505Z",
+        "lastContactTime": "2015-02-17T21:33:23.712Z",
+        "lastCloudBackupDate": null,
+        "lastEnrolledDate": null,
+        "mdmProfileExpiration": null,
+        "initialEntryDate": "2024-03-05",
+        "distributionPoint": null,
+        "site": {
+          "id": "-1",
+          "name": "None"
+        },
+        "itunesStoreAccountActive": false,
+        "enrolledViaAutomatedDeviceEnrollment": false,
+        "userApprovedMdm": false,
+        "enrollmentMethod": null,
+        "declarativeDeviceManagementEnabled": false,
+        "managementId": "f304c34d-cc6f-4bb8-9a74-ee7a7394e870",
+        "extensionAttributes": []
+      },
+      "diskEncryption": null,
+      "localUserAccounts": null,
+      "purchasing": null,
+      "printers": null,
+      "storage": {
+        "bootDriveAvailableSpaceMegabytes": 1,
+        "disks": [
+          {
+            "id": "68",
+            "device": "disk0",
+            "model": "APPLE SSD SM256E",
+            "revision": "CXM09A1Q",
+            "serialNumber": "S0X5NYAC414371",
+            "sizeMegabytes": 257024,
+            "smartStatus": "Verified",
+            "type": "NO",
+            "partitions": [
+              {
+                "name": "Macintosh HD (Boot Partition)",
+                "sizeMegabytes": 238233,
+                "availableMegabytes": 1,
+                "partitionType": "BOOT",
+                "percentUsed": 84,
+                "fileVault2State": "ENCRYPTED",
+                "fileVault2ProgressPercent": 100,
+                "lvmManaged": false
+              }
+            ]
+          }
+        ]
+      },
+      "applications": null,
+      "userAndLocation": null,
+      "configurationProfiles": null,
+      "services": null,
+      "plugins": null,
+      "hardware": {
+        "make": "Apple",
+        "model": "13-inch MacBook Pro (Mid 2012)",
+        "modelIdentifier": "MacBookPro9,2",
+        "serialNumber": null,
+        "processorSpeedMhz": 2048,
+        "processorCount": 2,
+        "coreCount": -1,
+        "processorType": "Intel Core i5",
+        "processorArchitecture": "i386",
+        "busSpeedMhz": 0,
+        "cacheSizeKilobytes": 3072,
+        "networkAdapterType": null,
+        "macAddress": null,
+        "altNetworkAdapterType": null,
+        "altMacAddress": null,
+        "totalRamMegabytes": 4096,
+        "openRamSlots": 0,
+        "batteryCapacityPercent": 85,
+        "smcVersion": "2.2f38",
+        "nicSpeed": "n/a",
+        "opticalDrive": "MATSHITA DVD-R   UJ-8A8",
+        "bootRom": "MBP91.00D3.B08",
+        "bleCapable": false,
+        "supportsIosAppInstalls": false,
+        "appleSilicon": false,
+        "extensionAttributes": []
+      },
+      "certificates": null,
+      "attachments": null,
+      "packageReceipts": null,
+      "fonts": null,
+      "security": null,
+      "operatingSystem": {
+        "name": "Mac OS X",
+        "version": "10.9.5",
+        "build": "13A603",
+        "supplementalBuildVersion": null,
+        "rapidSecurityResponse": null,
+        "activeDirectoryStatus": "Not Bound",
+        "fileVault2Status": "ALL_ENCRYPTED",
+        "softwareUpdateDeviceId": null,
+        "extensionAttributes": []
+      },
+      "licensedSoftware": null,
+      "softwareUpdates": null,
+      "groupMemberships": null,
+      "extensionAttributes": null,
+      "contentCaching": null,
+      "ibeacons": null
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import type { IDeskproClient } from "@deskpro/app-sdk";
 
 const invalidateAccessTokenService = (client: IDeskproClient) => {
   return baseRequest(client, {
-    url: `/auth/invalidate-token`,
+    url: `/v1/auth/invalidate-token`,
     method: "POST",
   });
 };

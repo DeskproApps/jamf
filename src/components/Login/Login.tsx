@@ -3,7 +3,7 @@ import { Title } from "@deskpro/app-sdk";
 import { Button, Container } from "../common";
 import type { FC } from "react";
 
-type Props = {
+export type Props = {
   onLogin: () => void,
   isLoading: boolean,
 };

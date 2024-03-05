@@ -22,8 +22,10 @@ const useLogout = (): Result => {
 
     setIsLoading(true);
 
-    return invalidateAccessTokenService(client)
-      .then(() => removeAccessTokenService(client))
+    return Promise.all([
+      invalidateAccessTokenService(client),
+      removeAccessTokenService(client),
+    ])
       .catch(noop)
       .finally(() => {
         setIsLoading(false);

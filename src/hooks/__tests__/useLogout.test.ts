@@ -66,7 +66,7 @@ describe("useLogout", () => {
       await result.current.logout();
     })
 
-    expect(removeAccessTokenService).not.toHaveBeenCalled();
+    expect(removeAccessTokenService).toHaveBeenCalled();
     expect(invalidateAccessTokenService).toHaveBeenCalled();
     expect(mockNavigate).toHaveBeenCalledWith("/login");
   });

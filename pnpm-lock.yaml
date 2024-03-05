@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@deskpro/app-sdk':
-    specifier: ^3.0.15
-    version: 3.0.15(@babel/core@7.23.9)(@deskpro/deskpro-ui@7.18.0)(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(typescript@4.9.5)
+    specifier: ^3.0.18
+    version: 3.0.18(@babel/core@7.23.9)(@deskpro/deskpro-ui@7.18.0)(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(typescript@4.9.5)
   '@deskpro/deskpro-ui':
     specifier: ^7.18.0
     version: 7.18.0(@types/web@0.0.86)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)
@@ -44,6 +44,9 @@ dependencies:
   styled-components:
     specifier: ^5.3.11
     version: 5.3.11(@babel/core@7.23.9)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)
+  use-debounce:
+    specifier: ^10.0.0
+    version: 10.0.0(react@18.2.0)
 
 devDependencies:
   '@jest/globals':
@@ -602,8 +605,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@deskpro/app-sdk@3.0.15(@babel/core@7.23.9)(@deskpro/deskpro-ui@7.18.0)(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(typescript@4.9.5):
-    resolution: {integrity: sha512-LkgXL8G3Ran9XdG2AhriUkLpesbkT6dVT+o8fBBQr5EiDtTL6Omh3dO07VSXabttr3x7rR0+1A4yo9A5wBk1IA==}
+  /@deskpro/app-sdk@3.0.18(@babel/core@7.23.9)(@deskpro/deskpro-ui@7.18.0)(@types/react-dom@18.2.18)(@types/react@18.2.48)(react-dom@18.2.0)(react-is@18.2.0)(react@18.2.0)(typescript@4.9.5):
+    resolution: {integrity: sha512-hjmXu7Jz6rYeckJsVa7Hk4a2VnF2vhknluTpqtcwrphwESe0xIYMv2yMueObt6oPqA3yUAGHhjQ+A4UHNuFCQw==}
     engines: {node: ^16.0.0}
     peerDependencies:
       '@deskpro/deskpro-ui': ^7
@@ -5559,6 +5562,15 @@ packages:
       querystringify: 2.2.0
       requires-port: 1.0.0
     dev: true
+
+  /use-debounce@10.0.0(react@18.2.0):
+    resolution: {integrity: sha512-XRjvlvCB46bah9IBXVnq/ACP2lxqXyZj0D9hj4K5OzNroMDpTEBg8Anuh1/UfRTRs7pLhQ+RiNxxwZu9+MVl1A==}
+    engines: {node: '>= 16.0.0'}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
 
   /use-debounce@7.0.1(react@18.2.0):
     resolution: {integrity: sha512-fOrzIw2wstbAJuv8PC9Vg4XgwyTLEOdq4y/Z3IhVl8DAE4svRcgyEUvrEXu+BMNgMoc3YND6qLT61kkgEKXh7Q==}

@@ -1,7 +1,7 @@
 import type { To, ParamKeyValuePair } from "react-router-dom";
 import type { DropdownValueType } from "@deskpro/deskpro-ui";
 import type { Context, IDeskproClient, V2ProxyRequestInitBody } from "@deskpro/app-sdk";
-import type { Response } from "./services/jamf/types";
+import type { Response, Computer, MobileDevice } from "./services/jamf/types";
 
 /** Common types */
 export type Maybe<T> = T | undefined | null;
@@ -35,7 +35,7 @@ export type FetchOptions = Pick<RequestParams, "method"|"headers"> & V2ProxyRequ
 
 /** Deskpro types */
 export type Settings = {
-  //..
+  instance_url?: string;
 };
 
 export type UserData = {
@@ -67,3 +67,15 @@ export type EventPayload =
   | NavigateToChangePage
   | LogoutPayload
 ;
+
+/** Entities */
+export type DeviceType = "Mac"|"tvOS"|"iOS";
+
+export type DeviceID = Computer["id"]|MobileDevice["mobileDeviceId"];
+
+export type DeviceMetaAsString = string;
+
+export type DeviceMeta = {
+  deviceId: DeviceID;
+  type: DeviceType;
+};

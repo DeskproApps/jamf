@@ -25,4 +25,4 @@ export const placeholders = {
 /** Jamf Pro */
 export const AUTH_URL = `${placeholders.INSTANCE_URL}/api/oauth`;
 
-export const BASE_URL = `${placeholders.INSTANCE_URL}/api/v1`;
+export const BASE_URL = `${placeholders.INSTANCE_URL}/api`;

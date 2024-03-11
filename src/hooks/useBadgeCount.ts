@@ -1,7 +1,7 @@
 import { size } from "lodash";
 import { useInitialisedDeskproAppClient } from "@deskpro/app-sdk";
 
-const useSetBadgeCount = <T>(items: Array<T>) => {
+const useBadgeCount = <T>(items: Array<T>) => {
   useInitialisedDeskproAppClient((client) => {
     if (!Array.isArray(items)) {
       return;
@@ -11,4 +11,4 @@ const useSetBadgeCount = <T>(items: Array<T>) => {
   }, [items]);
 };
 
-export { useSetBadgeCount };
+export { useBadgeCount };

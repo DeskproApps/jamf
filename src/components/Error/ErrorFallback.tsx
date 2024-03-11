@@ -18,6 +18,7 @@ const ErrorFallback: FC<Props> = ({ error }) => {
   if (error instanceof JamfError) {
     message = get(error, ["data", "error_description"])
       || get(error, ["data", "error"])
+      || get(error, ["data", "errors", 0, "description"])
       || DEFAULT_ERROR;
   }
 

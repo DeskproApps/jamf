@@ -1,8 +1,18 @@
-import { useSetTitle, useRegisterElements } from "../../hooks";
+import { LoadingSpinner } from "@deskpro/app-sdk";
+import {
+  useSetTitle,
+  useBadgeCount,
+  useLinkedDevices,
+  useRegisterElements,
+} from "../../hooks";
+import { Home } from "../../components";
 import type { FC } from "react";
 
 const HomePage: FC = () => {
+  const { isLoading, devices } = useLinkedDevices();
+
   useSetTitle("Jamf Pro");
+  useBadgeCount(devices);
 
   useRegisterElements(({ registerElement }) => {
     registerElement("plus", {
@@ -20,11 +30,15 @@ const HomePage: FC = () => {
     });
   });
 
+  if (isLoading) {
+    return (
+      <LoadingSpinner/>
+    );
+  }
+
   return (
-    <>
-      HomePage
-    </>
+    <Home devices={devices}/>
   );
 };
 
-export {HomePage};
+export { HomePage };

@@ -13,7 +13,11 @@ const queryClient = new QueryClient({
 });
 
 const QueryKey = {
-  //..
+  SEARCH_COMPUTER: "searchComputer",
+  SEARCH_MOBILE: "searchMobile",
+  LINKED_DEVICES: "linkedDevices",
+  MOBILE_DEVICE: "mobileDevice",
+  COMPUTER: "computer",
 }
 
 export { queryClient, QueryKey };

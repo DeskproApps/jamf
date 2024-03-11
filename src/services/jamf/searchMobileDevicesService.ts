@@ -1,18 +1,32 @@
 /* eslint-disable no-useless-escape */
 import { baseRequest } from "./baseRequest";
 import type { IDeskproClient } from "@deskpro/app-sdk";
-import type { Pagination, MobileDevice } from "./types";
+import type { Pagination, MobileDevice, Computer } from "./types";
+
+type Params = {
+  q?: string;
+  ids?: Array<Computer["id"]>;
+};
 
 const searchMobileDevicesService = (
   client: IDeskproClient,
-  q: string,
+  { q, ids }: Params,
 ) => {
-  const searchQuery = `${[
-    `displayName==\"${q}\"`,
-    `bluetoothMacAddress==\"${q}\"`,
-    `wifiMacAddress==\"${q}\"`,
-    `serialNumber==\"${q}\"`,
-  ].join(",")}`;
+  let filterQuery: string[] = [];
+
+  if (q) {
+    filterQuery = [
+      ...filterQuery,
+      `displayName==\"${q}\"`,
+      `bluetoothMacAddress==\"${q}\"`,
+      `wifiMacAddress==\"${q}\"`,
+      `serialNumber==\"${q}\"`,
+    ];
+  }
+
+  if (ids) {
+    filterQuery = [...filterQuery, ...ids.map((id) => `mobileDeviceId==\"${id}\"`)];
+  }
 
   return baseRequest<Pagination<MobileDevice>>(client, {
     url: `/v2/mobile-devices/detail`,
@@ -21,7 +35,7 @@ const searchMobileDevicesService = (
       "section=HARDWARE",
       "page-size=100",
       "sort=displayName:asc",
-      `filter=(${searchQuery})`,
+      `filter=(${filterQuery.join(",")})`,
     ].join("&"),
   });
 };

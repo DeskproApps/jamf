@@ -1,7 +1,7 @@
 import type { To, ParamKeyValuePair } from "react-router-dom";
 import type { DropdownValueType } from "@deskpro/deskpro-ui";
 import type { Context, IDeskproClient, V2ProxyRequestInitBody } from "@deskpro/app-sdk";
-import type { Response, Computer, MobileDevice } from "./services/jamf/types";
+import type { Response, Device, Computer, MobileDevice } from "./services/jamf/types";
 
 /** Common types */
 export type Maybe<T> = T | undefined | null;
@@ -63,9 +63,12 @@ export type NavigateToChangePage = { type: "changePage", path: To };
 
 export type LogoutPayload = { type: "logout" };
 
+export type UnlinkPayload = { type: "unlink", device: Device };
+
 export type EventPayload =
   | NavigateToChangePage
   | LogoutPayload
+  | UnlinkPayload
 ;
 
 /** Entities */

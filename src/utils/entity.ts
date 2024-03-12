@@ -1,17 +1,17 @@
 import { get, isString } from "lodash";
 import { isMac } from "./isMac";
 import type { Maybe, DeviceMeta, DeviceMetaAsString } from "../types";
-import type { Device, Computer, MobileDevice } from "../services/jamf/types";
+import type { Device, DeviceDetails } from "../services/jamf/types";
 
-const getMeta = (device?: Maybe<Device>): Maybe<DeviceMeta> => {
+const getMeta = (device?: Device|DeviceDetails): Maybe<DeviceMeta> => {
   if (!device) {
     return;
   }
 
-  const deviceId = isMac(device) ? get(device, ["id"]) : get(device, ["mobileDeviceId"]);
+  const deviceId = get(device, ["id"]) || get(device, ["mobileDeviceId"]);
   const type = isMac(device)
     ? get(device, ["general", "platform"])
-    : get(device, ["deviceType"]);
+    : get(device, ["deviceType"]) || get(device, ["type"]);
 
   if (!deviceId || !type) {
     return;
@@ -20,7 +20,7 @@ const getMeta = (device?: Maybe<Device>): Maybe<DeviceMeta> => {
   return { deviceId, type };
 };
 
-const generateId = (device?: Computer|MobileDevice): Maybe<DeviceMetaAsString> => {
+const generateId = (device?: Device|DeviceDetails): Maybe<DeviceMetaAsString> => {
   const meta = getMeta(device);
 
   if (!meta) {

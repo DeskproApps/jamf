@@ -21,10 +21,10 @@ const DevicePage: FC = () => {
       type: "menu",
       items: [{
         title: "Unlink device",
-        payload: { type: "unlink", device: null },
+        payload: { type: "unlink", device },
       }],
     });
-  });
+  }, [device]);
 
   if (isLoading) {
     return (

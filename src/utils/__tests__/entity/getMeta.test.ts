@@ -1,19 +1,25 @@
 import { entity } from "../../entity";
 import { omit } from "lodash";
-import { mockSearchMobileDevices, mockSearchComputers } from "../../../../testing";
-
-const mockComputer = mockSearchComputers.results[0];
-const mockMobileDevice = mockSearchMobileDevices.results[0];
+import {
+  mockComputer,
+  mockMobileDevice,
+  mockSearchComputers,
+  mockSearchMobileDevices,
+} from "../../../../testing";
 
 describe("utils", () => {
   describe("entity", () => {
     describe("getMeta", () => {
       test("should return device metadata", () => {
-        expect(entity.getMeta(mockComputer as never))
+        expect(entity.getMeta(mockSearchComputers.results[0] as never))
           .toEqual({ deviceId: "1", type: "Mac" });
+        expect(entity.getMeta(mockComputer as never))
+          .toEqual({ deviceId: "100500", type: "Mac" });
 
-        expect(entity.getMeta(mockMobileDevice as never))
+        expect(entity.getMeta(mockSearchMobileDevices.results[0] as never))
           .toEqual({ deviceId: "20", type: "iOS" })
+        expect(entity.getMeta(mockMobileDevice as never))
+          .toEqual({ deviceId: "105", type: "ios" })
       });
 
       test("shouldn't return if no data", () => {
@@ -21,19 +27,19 @@ describe("utils", () => {
       });
 
       test("shouldn't return if no id", () => {
-        const computer = omit(mockComputer, ["id"]);
-        expect(entity.getMeta(computer as never)).toBeUndefined();
+        expect(entity.getMeta(omit(mockSearchComputers.results[0] as never, ["id"]))).toBeUndefined();
+        expect(entity.getMeta(omit(mockComputer, ["id"]) as never)).toBeUndefined();
 
-        const mobileDevice = omit(mockMobileDevice, ["mobileDeviceId"]);
-        expect(entity.getMeta(mobileDevice as never)).toBeUndefined();
+        expect(entity.getMeta(omit(mockSearchMobileDevices.results[0], ["mobileDeviceId"]) as never)).toBeUndefined();
+        expect(entity.getMeta(omit(mockMobileDevice, ["id"]) as never)).toBeUndefined();
       });
 
       test("shouldn't return if no device type", () => {
-        const computer = omit(mockComputer, ["general", "platform"]);
-        expect(entity.getMeta(computer as never)).toBeUndefined();
+        expect(entity.getMeta(omit(mockSearchComputers.results[0], ["general", "platform"]) as never)).toBeUndefined();
+        expect(entity.getMeta(omit(mockComputer, ["general", "platform"]) as never)).toBeUndefined();
 
-        const mobileDevice = omit(mockMobileDevice, ["deviceType"]);
-        expect(entity.getMeta(mobileDevice as never)).toBeUndefined();
+        expect(entity.getMeta(omit(mockSearchMobileDevices.results[0], ["deviceType"]) as never)).toBeUndefined();
+        expect(entity.getMeta(omit(mockMobileDevice, ["type"]) as never)).toBeUndefined();
       });
 
       test.each(

@@ -7,8 +7,8 @@ import {
   useDeskproAppClient,
   useDeskproAppEvents,
 } from "@deskpro/app-sdk";
-import { useLogout } from "./hooks";
-import { isNavigatePayload } from "./utils";
+import { useLogout, useUnlinkDevice } from "./hooks";
+import { isNavigatePayload, isUnlinkPayload } from "./utils";
 import {
   HomePage,
   LoginPage,
@@ -22,7 +22,9 @@ import type { EventPayload } from "./types";
 const App: FC = () => {
   const navigate = useNavigate();
   const { client } = useDeskproAppClient();
-  const { logout, isLoading } = useLogout();
+  const { logout, isLoading: isLoadingLogout } = useLogout();
+  const { unlink, isLoading: isLoadingUnlink } = useUnlinkDevice();
+  const isLoading = isLoadingLogout || isLoadingUnlink;
 
   useDeskproElements(({ registerElement }) => {
     registerElement("refresh", { type: "refresh_button" });
@@ -30,12 +32,9 @@ const App: FC = () => {
 
   const debounceElementEvent = useDebouncedCallback((_, __, payload: EventPayload) => {
     return match(payload.type)
-      .with("changePage", () => {
-        if (isNavigatePayload(payload)) {
-          navigate(payload.path);
-        }
-      })
+      .with("changePage", () => isNavigatePayload(payload) && navigate(payload.path))
       .with("logout", logout)
+      .with("unlink", () => isUnlinkPayload(payload) && unlink(payload.device))
       .run();
   }, 500);
 

@@ -56,7 +56,7 @@ const useLinkedDevices: UseLinkedDevices = () => {
       linkedIds,
       computers,
       mobileDevices,
-    ].some(({ isLoading }) => isLoading) && Boolean(dpUserId),
+    ].some(({ isFetching }) => isFetching) && Boolean(dpUserId),
     devices: concat(
       get(computers, ["data", "results"], []) || [],
       get(mobileDevices, ["data", "results"], []) || [],

@@ -1,7 +1,15 @@
+import { useParams } from "react-router-dom";
+import { LoadingSpinner } from "@deskpro/app-sdk";
 import { useSetTitle, useRegisterElements } from "../../hooks";
+import { useDevice } from "./hooks";
+import { Device } from "../../components";
 import type { FC } from "react";
+import type { DeviceMeta } from "../../types";
 
-const DevicesPage: FC = () => {
+const DevicePage: FC = () => {
+  const params = useParams();
+  const { isLoading, device } = useDevice(params as DeviceMeta);
+
   useSetTitle("Jamf Pro");
 
   useRegisterElements(({ registerElement }) => {
@@ -18,11 +26,15 @@ const DevicesPage: FC = () => {
     });
   });
 
+  if (isLoading) {
+    return (
+      <LoadingSpinner />
+    );
+  }
+
   return (
-    <>
-      DevicesPage
-    </>
+    <Device device={device} />
   );
 };
 
-export { DevicesPage };
+export { DevicePage };

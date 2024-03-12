@@ -12,7 +12,7 @@ import { isNavigatePayload } from "./utils";
 import {
   HomePage,
   LoginPage,
-  DevicesPage,
+  DevicePage,
   LoadingAppPage,
   LinkDevicesPage,
 } from "./pages";
@@ -60,7 +60,7 @@ const App: FC = () => {
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/home" element={<HomePage/>}/>
         <Route path="/devices/link" element={<LinkDevicesPage/>} />
-        <Route path="/devices/:devideId/:type" element={<DevicesPage/>} />
+        <Route path="/devices/:deviceId/:type" element={<DevicePage/>} />
         <Route index element={<LoadingAppPage/>} />
       </Routes>
       <br/><br/><br/>

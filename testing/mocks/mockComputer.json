@@ -1,0 +1,2402 @@
+{
+  "id": "100500",
+  "udid": "159A9938-7A84-5061-BE02-5DBEFC944BD8",
+  "general": {
+    "name": "ilia's mac book",
+    "lastIpAddress": "212.1.97.42",
+    "lastReportedIp": "10.4.0.18",
+    "jamfBinaryVersion": "11.3.0-t1707837736",
+    "platform": "Mac",
+    "barcode1": null,
+    "barcode2": null,
+    "assetTag": null,
+    "remoteManagement": {
+      "managed": true,
+      "managementUsername": null
+    },
+    "supervised": true,
+    "mdmCapable": {
+      "capable": false,
+      "capableUsers": []
+    },
+    "reportDate": "2024-03-05T08:37:25.063Z",
+    "lastContactTime": "2024-03-11T13:58:38.829Z",
+    "lastCloudBackupDate": null,
+    "lastEnrolledDate": "2024-03-05T08:14:09.24Z",
+    "mdmProfileExpiration": "2026-03-05T08:13:45Z",
+    "initialEntryDate": "2024-03-05",
+    "distributionPoint": null,
+    "site": {
+      "id": "-1",
+      "name": "None"
+    },
+    "itunesStoreAccountActive": false,
+    "enrolledViaAutomatedDeviceEnrollment": false,
+    "userApprovedMdm": false,
+    "enrollmentMethod": null,
+    "declarativeDeviceManagementEnabled": false,
+    "managementId": "4082ef23-22a5-4b78-83e1-1dfee3a9d575",
+    "extensionAttributes": []
+  },
+  "diskEncryption": {
+    "individualRecoveryKeyValidityStatus": "UNKNOWN",
+    "institutionalRecoveryKeyPresent": false,
+    "diskEncryptionConfigurationName": null,
+    "fileVault2EligibilityMessage": "Eligible",
+    "fileVault2EnabledUserNames": [
+      "zpawn"
+    ],
+    "bootPartitionEncryptionDetails": {
+      "partitionName": "MacintoshHD (Boot Partition)",
+      "partitionFileVault2State": "ENCRYPTED",
+      "partitionFileVault2Percent": 100
+    }
+  },
+  "localUserAccounts": [
+    {
+      "uid": "501",
+      "userGuid": null,
+      "username": "zpawn",
+      "fullName": "zpawn",
+      "admin": true,
+      "userAccountType": "UNKNOWN",
+      "homeDirectory": "/Users/zpawn",
+      "homeDirectorySizeMb": -1,
+      "fileVault2Enabled": true,
+      "passwordMinLength": 4,
+      "passwordMaxAge": null,
+      "passwordMinComplexCharacters": null,
+      "passwordRequireAlphanumeric": false,
+      "passwordHistoryDepth": null,
+      "computerAzureActiveDirectoryId": null,
+      "userAzureActiveDirectoryId": null,
+      "azureActiveDirectoryId": null
+    }
+  ],
+  "purchasing": {
+    "purchased": true,
+    "leased": false,
+    "poNumber": null,
+    "lifeExpectancy": 0,
+    "purchasePrice": null,
+    "purchasingAccount": null,
+    "purchasingContact": null,
+    "appleCareId": null,
+    "vendor": null,
+    "leaseDate": null,
+    "poDate": null,
+    "warrantyDate": null,
+    "extensionAttributes": []
+  },
+  "printers": [],
+  "storage": {
+    "bootDriveAvailableSpaceMegabytes": 783044,
+    "disks": [
+      {
+        "id": "2",
+        "device": "disk0",
+        "model": "APPLE SSD AP1024N",
+        "revision": "1306",
+        "serialNumber": "C02949300HANK3M1J",
+        "sizeMegabytes": 1000555,
+        "smartStatus": "Verified",
+        "type": "NO",
+        "partitions": [
+          {
+            "name": "Update",
+            "sizeMegabytes": 1000240,
+            "availableMegabytes": 783044,
+            "partitionType": "OTHER",
+            "percentUsed": 1,
+            "fileVault2State": "UNENCRYPTED",
+            "fileVault2ProgressPercent": 0,
+            "lvmManaged": false
+          },
+          {
+            "name": "Preboot",
+            "sizeMegabytes": 1000240,
+            "availableMegabytes": 783044,
+            "partitionType": "OTHER",
+            "percentUsed": 1,
+            "fileVault2State": "UNENCRYPTED",
+            "fileVault2ProgressPercent": 0,
+            "lvmManaged": false
+          },
+          {
+            "name": "VM",
+            "sizeMegabytes": 1000240,
+            "availableMegabytes": 783044,
+            "partitionType": "OTHER",
+            "percentUsed": 1,
+            "fileVault2State": "UNENCRYPTED",
+            "fileVault2ProgressPercent": 0,
+            "lvmManaged": false
+          },
+          {
+            "name": "MacintoshHD (Boot Partition)",
+            "sizeMegabytes": 1000240,
+            "availableMegabytes": 783044,
+            "partitionType": "BOOT",
+            "percentUsed": 2,
+            "fileVault2State": "ENCRYPTED",
+            "fileVault2ProgressPercent": 100,
+            "lvmManaged": false
+          },
+          {
+            "name": "Data",
+            "sizeMegabytes": 1000240,
+            "availableMegabytes": 783044,
+            "partitionType": "OTHER",
+            "percentUsed": 21,
+            "fileVault2State": "ENCRYPTED",
+            "fileVault2ProgressPercent": 100,
+            "lvmManaged": false
+          }
+        ]
+      }
+    ]
+  },
+  "applications": [
+    {
+      "name": "Calendar.app",
+      "path": "/System/Applications/Calendar.app",
+      "version": "14.0",
+      "macAppStore": false,
+      "sizeMegabytes": 12,
+      "bundleId": "com.apple.iCal",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Shortcuts.app",
+      "path": "/System/Applications/Shortcuts.app",
+      "version": "7.0",
+      "macAppStore": false,
+      "sizeMegabytes": 4,
+      "bundleId": "com.apple.shortcuts",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Contacts.app",
+      "path": "/System/Applications/Contacts.app",
+      "version": "14.0",
+      "macAppStore": false,
+      "sizeMegabytes": 14,
+      "bundleId": "com.apple.AddressBook",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "AirDroid.app",
+      "path": "/Applications/AirDroid.app",
+      "version": "3.7.1.0",
+      "macAppStore": false,
+      "sizeMegabytes": 212,
+      "bundleId": "com.sandstudio.airdroid",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "VLC.app",
+      "path": "/Applications/VLC.app",
+      "version": "3.0.17.3",
+      "macAppStore": false,
+      "sizeMegabytes": 134,
+      "bundleId": "org.videolan.vlc",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Digital Color Meter.app",
+      "path": "/System/Applications/Utilities/Digital Color Meter.app",
+      "version": "5.22",
+      "macAppStore": false,
+      "sizeMegabytes": 1,
+      "bundleId": "com.apple.DigitalColorMeter",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "WebStorm.app",
+      "path": "/Applications/WebStorm.app",
+      "version": "2023.3.4",
+      "macAppStore": false,
+      "sizeMegabytes": 1788,
+      "bundleId": "com.jetbrains.WebStorm",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "TV.app",
+      "path": "/System/Applications/TV.app",
+      "version": "1.4.2",
+      "macAppStore": false,
+      "sizeMegabytes": 74,
+      "bundleId": "com.apple.TV",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Hubstaff.app",
+      "path": "/Applications/Hubstaff.app",
+      "version": "1.6.18-076c4540",
+      "macAppStore": false,
+      "sizeMegabytes": 58,
+      "bundleId": "com.netsoft.Hubstaff",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Terminal.app",
+      "path": "/System/Applications/Utilities/Terminal.app",
+      "version": "2.14",
+      "macAppStore": false,
+      "sizeMegabytes": 6,
+      "bundleId": "com.apple.Terminal",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Music.app",
+      "path": "/System/Applications/Music.app",
+      "version": "1.4.2",
+      "macAppStore": false,
+      "sizeMegabytes": 100,
+      "bundleId": "com.apple.Music",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "LogMeIn-Rescue.app",
+      "path": "/Applications/LogMeIn-Rescue.app",
+      "version": "7.12.3334.13-1.0.69",
+      "macAppStore": false,
+      "sizeMegabytes": 477,
+      "bundleId": "com.codeweavers.LogMeInRescue",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Notes.app",
+      "path": "/System/Applications/Notes.app",
+      "version": "4.11",
+      "macAppStore": false,
+      "sizeMegabytes": 30,
+      "bundleId": "com.apple.Notes",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Maps.app",
+      "path": "/System/Applications/Maps.app",
+      "version": "3.0",
+      "macAppStore": false,
+      "sizeMegabytes": 68,
+      "bundleId": "com.apple.Maps",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Screenshot.app",
+      "path": "/System/Applications/Utilities/Screenshot.app",
+      "version": "1.0",
+      "macAppStore": false,
+      "sizeMegabytes": 0,
+      "bundleId": "com.apple.screenshot.launcher",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Print Center.app",
+      "path": "/System/Applications/Utilities/Print Center.app",
+      "version": "1.0",
+      "macAppStore": false,
+      "sizeMegabytes": 2,
+      "bundleId": "com.apple.printcenter",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Stocks.app",
+      "path": "/System/Applications/Stocks.app",
+      "version": "6.2",
+      "macAppStore": false,
+      "sizeMegabytes": 6,
+      "bundleId": "com.apple.stocks",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Keychain Access.app",
+      "path": "/System/Applications/Utilities/Keychain Access.app",
+      "version": "11.0",
+      "macAppStore": false,
+      "sizeMegabytes": 4,
+      "bundleId": "com.apple.keychainaccess",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "VoiceMemos.app",
+      "path": "/System/Applications/VoiceMemos.app",
+      "version": "2.4",
+      "macAppStore": false,
+      "sizeMegabytes": 5,
+      "bundleId": "com.apple.VoiceMemos",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "iTerm.app",
+      "path": "/Applications/iTerm.app",
+      "version": "3.4.23",
+      "macAppStore": false,
+      "sizeMegabytes": 70,
+      "bundleId": "com.googlecode.iterm2",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Google Chrome.app",
+      "path": "/Applications/Google Chrome.app",
+      "version": "122.0.6261.94",
+      "macAppStore": false,
+      "sizeMegabytes": 1103,
+      "bundleId": "com.google.Chrome",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "ColorSync Utility.app",
+      "path": "/System/Applications/Utilities/ColorSync Utility.app",
+      "version": "12.0.0",
+      "macAppStore": false,
+      "sizeMegabytes": 5,
+      "bundleId": "com.apple.ColorSyncUtility",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Books.app",
+      "path": "/System/Applications/Books.app",
+      "version": "6.2",
+      "macAppStore": false,
+      "sizeMegabytes": 110,
+      "bundleId": "com.apple.iBooksX",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Mission Control.app",
+      "path": "/System/Applications/Mission Control.app",
+      "version": "1.2",
+      "macAppStore": false,
+      "sizeMegabytes": 0,
+      "bundleId": "com.apple.exposelauncher",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Home.app",
+      "path": "/System/Applications/Home.app",
+      "version": "8.0",
+      "macAppStore": false,
+      "sizeMegabytes": 17,
+      "bundleId": "com.apple.Home",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Freeform.app",
+      "path": "/System/Applications/Freeform.app",
+      "version": "2.2",
+      "macAppStore": false,
+      "sizeMegabytes": 56,
+      "bundleId": "com.apple.freeform",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Weather.app",
+      "path": "/System/Applications/Weather.app",
+      "version": "4.2",
+      "macAppStore": false,
+      "sizeMegabytes": 58,
+      "bundleId": "com.apple.weather",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Viber.app",
+      "path": "/Applications/Viber.app",
+      "version": "22.0.1",
+      "macAppStore": false,
+      "sizeMegabytes": 432,
+      "bundleId": "com.viber.osx",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Double Commander.app",
+      "path": "/Applications/Double Commander.app",
+      "version": "0.9.10",
+      "macAppStore": false,
+      "sizeMegabytes": 53,
+      "bundleId": "com.company.doublecmd",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Discord.app",
+      "path": "/Applications/Discord.app",
+      "version": "0.0.294",
+      "macAppStore": false,
+      "sizeMegabytes": 374,
+      "bundleId": "com.hnc.Discord",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "TeamViewer.app",
+      "path": "/Applications/TeamViewer.app",
+      "version": "15.47.3",
+      "macAppStore": false,
+      "sizeMegabytes": 355,
+      "bundleId": "com.teamviewer.TeamViewer",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "zoom.us.app",
+      "path": "/Applications/zoom.us.app",
+      "version": "5.17.2 (28415)",
+      "macAppStore": false,
+      "sizeMegabytes": 302,
+      "bundleId": "us.zoom.xos",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Messages.app",
+      "path": "/System/Applications/Messages.app",
+      "version": "14.0",
+      "macAppStore": false,
+      "sizeMegabytes": 7,
+      "bundleId": "com.apple.MobileSMS",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Time Machine.app",
+      "path": "/System/Applications/Time Machine.app",
+      "version": "1.3",
+      "macAppStore": false,
+      "sizeMegabytes": 1,
+      "bundleId": "com.apple.backup.launcher",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "FaceTime.app",
+      "path": "/System/Applications/FaceTime.app",
+      "version": "5.0",
+      "macAppStore": false,
+      "sizeMegabytes": 16,
+      "bundleId": "com.apple.FaceTime",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Docker.app",
+      "path": "/Applications/Docker.app",
+      "version": "4.25.2",
+      "macAppStore": false,
+      "sizeMegabytes": 2134,
+      "bundleId": "com.docker.docker",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Screen Sharing.app",
+      "path": "/System/Applications/Utilities/Screen Sharing.app",
+      "version": "4.1",
+      "macAppStore": false,
+      "sizeMegabytes": 5,
+      "bundleId": "com.apple.ScreenSharing",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Skype.app",
+      "path": "/Applications/Skype.app",
+      "version": "8.113",
+      "macAppStore": false,
+      "sizeMegabytes": 592,
+      "bundleId": "com.skype.skype",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Reminders.app",
+      "path": "/System/Applications/Reminders.app",
+      "version": "7.0",
+      "macAppStore": false,
+      "sizeMegabytes": 23,
+      "bundleId": "com.apple.reminders",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Launchpad.app",
+      "path": "/System/Applications/Launchpad.app",
+      "version": "1.0",
+      "macAppStore": false,
+      "sizeMegabytes": 1,
+      "bundleId": "com.apple.launchpad.launcher",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Photo Booth.app",
+      "path": "/System/Applications/Photo Booth.app",
+      "version": "13.1",
+      "macAppStore": false,
+      "sizeMegabytes": 4,
+      "bundleId": "com.apple.PhotoBooth",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "System Information.app",
+      "path": "/System/Applications/Utilities/System Information.app",
+      "version": "11.0",
+      "macAppStore": false,
+      "sizeMegabytes": 3,
+      "bundleId": "com.apple.SystemProfiler",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Preview.app",
+      "path": "/System/Applications/Preview.app",
+      "version": "11.0",
+      "macAppStore": false,
+      "sizeMegabytes": 9,
+      "bundleId": "com.apple.Preview",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Script Editor.app",
+      "path": "/System/Applications/Utilities/Script Editor.app",
+      "version": "2.11",
+      "macAppStore": false,
+      "sizeMegabytes": 2,
+      "bundleId": "com.apple.ScriptEditor2",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Disk Utility.app",
+      "path": "/System/Applications/Utilities/Disk Utility.app",
+      "version": "22.6",
+      "macAppStore": false,
+      "sizeMegabytes": 7,
+      "bundleId": "com.apple.DiskUtility",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "System Settings.app",
+      "path": "/System/Applications/System Settings.app",
+      "version": "15.0",
+      "macAppStore": false,
+      "sizeMegabytes": 7,
+      "bundleId": "com.apple.systempreferences",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Steam.app",
+      "path": "/Applications/Steam.app",
+      "version": "4.0",
+      "macAppStore": false,
+      "sizeMegabytes": 6,
+      "bundleId": "com.valvesoftware.steam",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Slack.app",
+      "path": "/Applications/Slack.app",
+      "version": "4.35.126",
+      "macAppStore": true,
+      "sizeMegabytes": 463,
+      "bundleId": "com.tinyspeck.slackmacgap",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Mail.app",
+      "path": "/System/Applications/Mail.app",
+      "version": "16.0",
+      "macAppStore": false,
+      "sizeMegabytes": 27,
+      "bundleId": "com.apple.mail",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Image Capture.app",
+      "path": "/System/Applications/Image Capture.app",
+      "version": "8.0",
+      "macAppStore": false,
+      "sizeMegabytes": 3,
+      "bundleId": "com.apple.Image_Capture",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Activity Monitor.app",
+      "path": "/System/Applications/Utilities/Activity Monitor.app",
+      "version": "10.14",
+      "macAppStore": false,
+      "sizeMegabytes": 4,
+      "bundleId": "com.apple.ActivityMonitor",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Audio MIDI Setup.app",
+      "path": "/System/Applications/Utilities/Audio MIDI Setup.app",
+      "version": "3.6",
+      "macAppStore": false,
+      "sizeMegabytes": 9,
+      "bundleId": "com.apple.audio.AudioMIDISetup",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "App Store.app",
+      "path": "/System/Applications/App Store.app",
+      "version": "3.0",
+      "macAppStore": false,
+      "sizeMegabytes": 15,
+      "bundleId": "com.apple.AppStore",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "QuickTime Player.app",
+      "path": "/System/Applications/QuickTime Player.app",
+      "version": "10.5",
+      "macAppStore": false,
+      "sizeMegabytes": 6,
+      "bundleId": "com.apple.QuickTimePlayerX",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "TextEdit.app",
+      "path": "/System/Applications/TextEdit.app",
+      "version": "1.19",
+      "macAppStore": false,
+      "sizeMegabytes": 2,
+      "bundleId": "com.apple.TextEdit",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Siri.app",
+      "path": "/System/Applications/Siri.app",
+      "version": "1.0",
+      "macAppStore": false,
+      "sizeMegabytes": 2,
+      "bundleId": "com.apple.siri.launcher",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Console.app",
+      "path": "/System/Applications/Utilities/Console.app",
+      "version": "1.1",
+      "macAppStore": false,
+      "sizeMegabytes": 2,
+      "bundleId": "com.apple.Console",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "News.app",
+      "path": "/System/Applications/News.app",
+      "version": "9.2",
+      "macAppStore": false,
+      "sizeMegabytes": 10,
+      "bundleId": "com.apple.news",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Bluetooth File Exchange.app",
+      "path": "/System/Applications/Utilities/Bluetooth File Exchange.app",
+      "version": "9.0",
+      "macAppStore": false,
+      "sizeMegabytes": 1,
+      "bundleId": "com.apple.BluetoothFileExchange",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Grapher.app",
+      "path": "/System/Applications/Utilities/Grapher.app",
+      "version": "2.7",
+      "macAppStore": false,
+      "sizeMegabytes": 10,
+      "bundleId": "com.apple.grapher",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Postman.app",
+      "path": "/Applications/Postman.app",
+      "version": "10.23.5",
+      "macAppStore": false,
+      "sizeMegabytes": 371,
+      "bundleId": "com.postmanlabs.mac",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Stickies.app",
+      "path": "/System/Applications/Stickies.app",
+      "version": "10.2",
+      "macAppStore": false,
+      "sizeMegabytes": 1,
+      "bundleId": "com.apple.Stickies",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Photos.app",
+      "path": "/System/Applications/Photos.app",
+      "version": "9.0",
+      "macAppStore": false,
+      "sizeMegabytes": 39,
+      "bundleId": "com.apple.Photos",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Transmission.app",
+      "path": "/Applications/Transmission.app",
+      "version": "4.0.0",
+      "macAppStore": false,
+      "sizeMegabytes": 15,
+      "bundleId": "org.m0k.transmission",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Migration Assistant.app",
+      "path": "/System/Applications/Utilities/Migration Assistant.app",
+      "version": "14.2",
+      "macAppStore": false,
+      "sizeMegabytes": 1,
+      "bundleId": "com.apple.MigrateAssistant",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "FindMy.app",
+      "path": "/System/Applications/FindMy.app",
+      "version": "4.0",
+      "macAppStore": false,
+      "sizeMegabytes": 32,
+      "bundleId": "com.apple.findmy",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Safari.app",
+      "path": "/Applications/Safari.app",
+      "version": "17.2.1",
+      "macAppStore": false,
+      "sizeMegabytes": 13,
+      "bundleId": "com.apple.Safari",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "OBS.app",
+      "path": "/Applications/OBS.app",
+      "version": "29.1.3",
+      "macAppStore": false,
+      "sizeMegabytes": 361,
+      "bundleId": "com.obsproject.obs-studio",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "BambuStudio.app",
+      "path": "/Applications/BambuStudio.app",
+      "version": "01.08.04.51",
+      "macAppStore": false,
+      "sizeMegabytes": 312,
+      "bundleId": "com.bambulab.bambu-studio",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Font Book.app",
+      "path": "/System/Applications/Font Book.app",
+      "version": "11.0",
+      "macAppStore": false,
+      "sizeMegabytes": 10,
+      "bundleId": "com.apple.FontBook",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Clock.app",
+      "path": "/System/Applications/Clock.app",
+      "version": "1.1",
+      "macAppStore": false,
+      "sizeMegabytes": 7,
+      "bundleId": "com.apple.clock",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Podcasts.app",
+      "path": "/System/Applications/Podcasts.app",
+      "version": "1.1.0",
+      "macAppStore": false,
+      "sizeMegabytes": 47,
+      "bundleId": "com.apple.podcasts",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Boot Camp Assistant.app",
+      "path": "/System/Applications/Utilities/Boot Camp Assistant.app",
+      "version": "6.1.0",
+      "macAppStore": false,
+      "sizeMegabytes": 5,
+      "bundleId": "com.apple.bootcampassistant",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Chess.app",
+      "path": "/System/Applications/Chess.app",
+      "version": "3.18",
+      "macAppStore": false,
+      "sizeMegabytes": 7,
+      "bundleId": "com.apple.Chess",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Calculator.app",
+      "path": "/System/Applications/Calculator.app",
+      "version": "10.16",
+      "macAppStore": false,
+      "sizeMegabytes": 3,
+      "bundleId": "com.apple.calculator",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Dictionary.app",
+      "path": "/System/Applications/Dictionary.app",
+      "version": "2.3.0",
+      "macAppStore": false,
+      "sizeMegabytes": 13,
+      "bundleId": "com.apple.Dictionary",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Visual Studio Code.app",
+      "path": "/Applications/Visual Studio Code.app",
+      "version": "1.85.1",
+      "macAppStore": false,
+      "sizeMegabytes": 521,
+      "bundleId": "com.microsoft.VSCode",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "AirPort Utility.app",
+      "path": "/System/Applications/Utilities/AirPort Utility.app",
+      "version": "6.3.9",
+      "macAppStore": false,
+      "sizeMegabytes": 39,
+      "bundleId": "com.apple.airport.airportutility",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Sublime Text.app",
+      "path": "/Applications/Sublime Text.app",
+      "version": "Build 4169",
+      "macAppStore": false,
+      "sizeMegabytes": 110,
+      "bundleId": "com.sublimetext.4",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "Automator.app",
+      "path": "/System/Applications/Automator.app",
+      "version": "2.10",
+      "macAppStore": false,
+      "sizeMegabytes": 4,
+      "bundleId": "com.apple.Automator",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    },
+    {
+      "name": "VoiceOver Utility.app",
+      "path": "/System/Applications/Utilities/VoiceOver Utility.app",
+      "version": "10",
+      "macAppStore": false,
+      "sizeMegabytes": 11,
+      "bundleId": "com.apple.VoiceOverUtility",
+      "updateAvailable": false,
+      "externalVersionId": "0"
+    }
+  ],
+  "userAndLocation": {
+    "username": "george-rr-martin",
+    "realname": "George R. R. Martin",
+    "email": "george.rr.martin@fantasytales.com",
+    "position": "Fantasy Writers",
+    "phone": "+123-456-7900",
+    "departmentId": null,
+    "buildingId": null,
+    "room": null,
+    "extensionAttributes": []
+  },
+  "configurationProfiles": [],
+  "services": [
+    {
+      "name": "com.apple.accessoryd"
+    },
+    {
+      "name": "com.apple.accessoryupdaterd"
+    },
+    {
+      "name": "com.apple.AccountPolicyHelper"
+    },
+    {
+      "name": "com.apple.adid"
+    },
+    {
+      "name": "com.apple.afpfs_afpLoad"
+    },
+    {
+      "name": "com.apple.afpfs_checkafp"
+    },
+    {
+      "name": "com.apple.AirPlayXPCHelper"
+    },
+    {
+      "name": "com.apple.airport.wps"
+    },
+    {
+      "name": "com.apple.airportd"
+    },
+    {
+      "name": "com.apple.akd"
+    },
+    {
+      "name": "com.apple.alf"
+    },
+    {
+      "name": "com.apple.AmbientDisplayAgent"
+    },
+    {
+      "name": "com.apple.analyticsd"
+    },
+    {
+      "name": "com.apple.aned"
+    },
+    {
+      "name": "com.apple.aneuserd"
+    },
+    {
+      "name": "com.apple.apfsd"
+    },
+    {
+      "name": "com.apple.appinstalld"
+    },
+    {
+      "name": "com.apple.AppleCredentialManagerDaemon"
+    },
+    {
+      "name": "com.apple.appleh13camerad"
+    },
+    {
+      "name": "com.apple.appleh16camerad"
+    },
+    {
+      "name": "com.apple.AppleQEMUGuestAgent"
+    },
+    {
+      "name": "com.apple.appleseed.fbahelperd"
+    },
+    {
+      "name": "com.apple.applessdstatistics"
+    },
+    {
+      "name": "com.apple.AppSSOAgent.login"
+    },
+    {
+      "name": "com.apple.AppSSODaemon"
+    },
+    {
+      "name": "com.apple.appstored"
+    },
+    {
+      "name": "com.apple.AppStoreDaemon.StorePrivilegedTaskService"
+    },
+    {
+      "name": "com.apple.apsd"
+    },
+    {
+      "name": "com.apple.aslmanager"
+    },
+    {
+      "name": "com.apple.asr"
+    },
+    {
+      "name": "com.apple.AssetCache.builtin"
+    },
+    {
+      "name": "com.apple.AssetCacheLocatorService"
+    },
+    {
+      "name": "com.apple.AssetCacheManagerService"
+    },
+    {
+      "name": "com.apple.AssetCacheTetheratorService"
+    },
+    {
+      "name": "com.apple.audio.AudioComponentRegistrar"
+    },
+    {
+      "name": "com.apple.audio.coreaudiod"
+    },
+    {
+      "name": "com.apple.audio.systemsoundserverd"
+    },
+    {
+      "name": "com.apple.audio.toolbox.reporting.service"
+    },
+    {
+      "name": "com.apple.audioanalyticsd"
+    },
+    {
+      "name": "com.apple.audiomxd"
+    },
+    {
+      "name": "com.apple.auditd"
+    },
+    {
+      "name": "com.apple.authd"
+    },
+    {
+      "name": "com.apple.autofsd"
+    },
+    {
+      "name": "com.apple.automountd"
+    },
+    {
+      "name": "com.apple.avbdeviced"
+    },
+    {
+      "name": "com.apple.awdd"
+    },
+    {
+      "name": "com.apple.AXMediaUtilitiesService"
+    },
+    {
+      "name": "com.apple.backgroundtaskmanagementd"
+    },
+    {
+      "name": "com.apple.backupd"
+    },
+    {
+      "name": "com.apple.backupd-helper"
+    },
+    {
+      "name": "com.apple.biomed"
+    },
+    {
+      "name": "com.apple.biometrickitd"
+    },
+    {
+      "name": "com.apple.BlueTool"
+    },
+    {
+      "name": "com.apple.bluetoothd"
+    },
+    {
+      "name": "com.apple.BluetoothUIService"
+    },
+    {
+      "name": "com.apple.bootinstalld"
+    },
+    {
+      "name": "com.apple.bosreporter"
+    },
+    {
+      "name": "com.apple.boswatcher"
+    },
+    {
+      "name": "com.apple.bridgeOSUpdateProxy"
+    },
+    {
+      "name": "com.apple.bsd.dirhelper"
+    },
+    {
+      "name": "com.apple.BTServer.le"
+    },
+    {
+      "name": "com.apple.captiveagent"
+    },
+    {
+      "name": "com.apple.cfnetwork.cfnetworkagent"
+    },
+    {
+      "name": "com.apple.cfprefsd.xpc.daemon"
+    },
+    {
+      "name": "com.apple.cloudd"
+    },
+    {
+      "name": "com.apple.cmio.AVCAssistant"
+    },
+    {
+      "name": "com.apple.cmio.IIDCVideoAssistant"
+    },
+    {
+      "name": "com.apple.cmio.iOSScreenCaptureAssistant"
+    },
+    {
+      "name": "com.apple.cmio.registerassistantservice"
+    },
+    {
+      "name": "com.apple.cmio.uvcassistantextension"
+    },
+    {
+      "name": "com.apple.cmio.VDCAssistant"
+    },
+    {
+      "name": "com.apple.CodeSigningHelper"
+    },
+    {
+      "name": "com.apple.colorsync.displayservices"
+    },
+    {
+      "name": "com.apple.colorsyncd"
+    },
+    {
+      "name": "com.apple.configd"
+    },
+    {
+      "name": "com.apple.configureLocalKDC"
+    },
+    {
+      "name": "com.apple.containermanagerd.system"
+    },
+    {
+      "name": "com.apple.contextstored"
+    },
+    {
+      "name": "com.apple.CoreAuthentication.daemon"
+    },
+    {
+      "name": "com.apple.corebrightnessd"
+    },
+    {
+      "name": "com.apple.corecaptured"
+    },
+    {
+      "name": "com.apple.coreduetd"
+    },
+    {
+      "name": "com.apple.corekdld"
+    },
+    {
+      "name": "com.apple.coreservices.appleevents"
+    },
+    {
+      "name": "com.apple.coreservices.launchservicesd"
+    },
+    {
+      "name": "com.apple.coreservices.sharedfilelistd"
+    },
+    {
+      "name": "com.apple.coreservicesd"
+    },
+    {
+      "name": "com.apple.corestorage.corestoraged"
+    },
+    {
+      "name": "com.apple.corestorage.corestoragehelperd"
+    },
+    {
+      "name": "com.apple.coresymbolicationd"
+    },
+    {
+      "name": "com.apple.countryd"
+    },
+    {
+      "name": "com.apple.CrashReporterSupportHelper"
+    },
+    {
+      "name": "com.apple.CryptoTokenKit.ahp"
+    },
+    {
+      "name": "com.apple.CSCSupportd"
+    },
+    {
+      "name": "com.apple.csrutil.report"
+    },
+    {
+      "name": "com.apple.ctkd"
+    },
+    {
+      "name": "com.apple.cvmsServ"
+    },
+    {
+      "name": "com.apple.dasd"
+    },
+    {
+      "name": "com.apple.DASDelegateService"
+    },
+    {
+      "name": "com.apple.DataDetectorsSourceAccess"
+    },
+    {
+      "name": "com.apple.deleted_helper"
+    },
+    {
+      "name": "com.apple.DesktopServicesHelper"
+    },
+    {
+      "name": "com.apple.devicemanagementclient.teslad"
+    },
+    {
+      "name": "com.apple.diagnosticd"
+    },
+    {
+      "name": "com.apple.diagnosticextensions.osx.spotlight.helper"
+    },
+    {
+      "name": "com.apple.diagnosticextensions.osx.timemachine.helper"
+    },
+    {
+      "name": "com.apple.diskarbitrationd"
+    },
+    {
+      "name": "com.apple.diskimagesiod"
+    },
+    {
+      "name": "com.apple.diskimagesiod.ram"
+    },
+    {
+      "name": "com.apple.diskimagesiod.spb"
+    },
+    {
+      "name": "com.apple.diskmanagementstartup"
+    },
+    {
+      "name": "com.apple.displaypolicyd"
+    },
+    {
+      "name": "com.apple.distnoted.xpc.daemon"
+    },
+    {
+      "name": "com.apple.dpaudiothru"
+    },
+    {
+      "name": "com.apple.dpd"
+    },
+    {
+      "name": "com.apple.dprivacyd"
+    },
+    {
+      "name": "com.apple.driverkit.AppleUserHIDDrivers-0x1000006f7"
+    },
+    {
+      "name": "com.apple.dspluginhelperd"
+    },
+    {
+      "name": "com.apple.dt.automationmode-writer"
+    },
+    {
+      "name": "com.apple.dt.fetchsymbolsd"
+    },
+    {
+      "name": "com.apple.dt.RemotePairingDataVaultHelper"
+    },
+    {
+      "name": "com.apple.DumpGPURestart"
+    },
+    {
+      "name": "com.apple.DumpPanic"
+    },
+    {
+      "name": "com.apple.DumpPanic.Accessory"
+    },
+    {
+      "name": "com.apple.dvdplayback.setregion"
+    },
+    {
+      "name": "com.apple.dynamic_pager"
+    },
+    {
+      "name": "com.apple.eapolcfg_auth"
+    },
+    {
+      "name": "com.apple.efilogin-helper"
+    },
+    {
+      "name": "com.apple.endpointsecurity.endpointsecurityd"
+    },
+    {
+      "name": "com.apple.eoshostd"
+    },
+    {
+      "name": "com.apple.erasecontentsettingshelperd"
+    },
+    {
+      "name": "com.apple.fairplayd"
+    },
+    {
+      "name": "com.apple.fairplaydeviceidentityd"
+    },
+    {
+      "name": "com.apple.familycontrols"
+    },
+    {
+      "name": "com.apple.FileCoordination"
+    },
+    {
+      "name": "com.apple.filesystems.fskitd"
+    },
+    {
+      "name": "com.apple.filesystems.userfs_helper"
+    },
+    {
+      "name": "com.apple.filesystems.userfsd"
+    },
+    {
+      "name": "com.apple.findmy.findmybeaconingd"
+    },
+    {
+      "name": "com.apple.findmymacd"
+    },
+    {
+      "name": "com.apple.findmymacmessenger"
+    },
+    {
+      "name": "com.apple.fontmover"
+    },
+    {
+      "name": "com.apple.fpsd.arcadeservice"
+    },
+    {
+      "name": "com.apple.fseventsd"
+    },
+    {
+      "name": "com.apple.fskit.fskit_helper"
+    },
+    {
+      "name": "com.apple.GameController.gamecontrollerd"
+    },
+    {
+      "name": "com.apple.gkreport"
+    },
+    {
+      "name": "com.apple.griddatad"
+    },
+    {
+      "name": "com.apple.GSSCred"
+    },
+    {
+      "name": "com.apple.gssd"
+    },
+    {
+      "name": "com.apple.hdiejectd"
+    },
+    {
+      "name": "com.apple.hidd"
+    },
+    {
+      "name": "com.apple.icloud.findmydeviced"
+    },
+    {
+      "name": "com.apple.icloud.searchpartyd"
+    },
+    {
+      "name": "com.apple.iconservices.iconservicesagent"
+    },
+    {
+      "name": "com.apple.iconservices.iconservicesd"
+    },
+    {
+      "name": "com.apple.idleassetsd"
+    },
+    {
+      "name": "com.apple.IFCStart"
+    },
+    {
+      "name": "com.apple.ifdreader"
+    },
+    {
+      "name": "com.apple.installandsetup.systemmigrationd"
+    },
+    {
+      "name": "com.apple.installcoordination_proxy"
+    },
+    {
+      "name": "com.apple.installcoordinationd"
+    },
+    {
+      "name": "com.apple.installd"
+    },
+    {
+      "name": "com.apple.InstallerDiagnostics.installerdiagd"
+    },
+    {
+      "name": "com.apple.InstallerDiagnostics.installerdiagwatcher"
+    },
+    {
+      "name": "com.apple.InstallerProgress"
+    },
+    {
+      "name": "com.apple.internal.aupbregistrarservice"
+    },
+    {
+      "name": "com.apple.IOAccelMemoryInfoCollector"
+    },
+    {
+      "name": "com.apple.iokit.ioserviceauthorized"
+    },
+    {
+      "name": "com.apple.iomfb_bics_daemon"
+    },
+    {
+      "name": "com.apple.iomfb_fdr_loader"
+    },
+    {
+      "name": "com.apple.ionodecache"
+    },
+    {
+      "name": "com.apple.ioupsd"
+    },
+    {
+      "name": "com.apple.IOUserBluetoothSerialDriver-0x100000b3e"
+    },
+    {
+      "name": "com.apple.IOUserDockChannelSerial-0x100000691"
+    },
+    {
+      "name": "com.apple.kcproxy"
+    },
+    {
+      "name": "com.apple.Kerberos.digest-service"
+    },
+    {
+      "name": "com.apple.Kerberos.kadmind"
+    },
+    {
+      "name": "com.apple.Kerberos.kcm"
+    },
+    {
+      "name": "com.apple.Kerberos.kdc"
+    },
+    {
+      "name": "com.apple.Kerberos.kpasswdd"
+    },
+    {
+      "name": "com.apple.KernelEventAgent"
+    },
+    {
+      "name": "com.apple.kernelmanager_helper"
+    },
+    {
+      "name": "com.apple.kernelmanagerd"
+    },
+    {
+      "name": "com.apple.kuncd"
+    },
+    {
+      "name": "com.apple.liquiddetectiond"
+    },
+    {
+      "name": "com.apple.locationd"
+    },
+    {
+      "name": "com.apple.lockd"
+    },
+    {
+      "name": "com.apple.logd"
+    },
+    {
+      "name": "com.apple.logd_helper"
+    },
+    {
+      "name": "com.apple.logd_reporter"
+    },
+    {
+      "name": "com.apple.logind"
+    },
+    {
+      "name": "com.apple.loginwindow"
+    },
+    {
+      "name": "com.apple.loginwindow.DBEC36A9-22D6-4A48-B7EB-9759F45B80F0"
+    },
+    {
+      "name": "com.apple.logkextloadsd"
+    },
+    {
+      "name": "com.apple.lsd"
+    },
+    {
+      "name": "com.apple.lskdd"
+    },
+    {
+      "name": "com.apple.ManagedClient"
+    },
+    {
+      "name": "com.apple.ManagedClient.cloudconfigurationd"
+    },
+    {
+      "name": "com.apple.ManagedClient.enroll"
+    },
+    {
+      "name": "com.apple.ManagedClient.mechanism"
+    },
+    {
+      "name": "com.apple.mbsystemadministration"
+    },
+    {
+      "name": "com.apple.mbusertrampoline"
+    },
+    {
+      "name": "com.apple.mdmclient.daemon"
+    },
+    {
+      "name": "com.apple.mdmclient.daemon.runatboot"
+    },
+    {
+      "name": "com.apple.mDNSResponder.reloaded"
+    },
+    {
+      "name": "com.apple.mDNSResponderHelper.reloaded"
+    },
+    {
+      "name": "com.apple.mediaremoted"
+    },
+    {
+      "name": "com.apple.memory-maintenance"
+    },
+    {
+      "name": "com.apple.metadata.mds"
+    },
+    {
+      "name": "com.apple.metadata.mds.index"
+    },
+    {
+      "name": "com.apple.metadata.mds.scan"
+    },
+    {
+      "name": "com.apple.metadata.mds.spindump"
+    },
+    {
+      "name": "com.apple.misagent"
+    },
+    {
+      "name": "com.apple.mobile.keybagd"
+    },
+    {
+      "name": "com.apple.mobile.notification_proxy"
+    },
+    {
+      "name": "com.apple.mobile.NRDUpdated"
+    },
+    {
+      "name": "com.apple.mobile.obliteration"
+    },
+    {
+      "name": "com.apple.mobile.softwareupdated"
+    },
+    {
+      "name": "com.apple.mobile.storage_mounter"
+    },
+    {
+      "name": "com.apple.mobile.storage_mounter_proxy"
+    },
+    {
+      "name": "com.apple.mobile.usermanagerd"
+    },
+    {
+      "name": "com.apple.mobileactivationd"
+    },
+    {
+      "name": "com.apple.mobileassetd"
+    },
+    {
+      "name": "com.apple.MobileFileIntegrity"
+    },
+    {
+      "name": "com.apple.mobilegestalt.xpc"
+    },
+    {
+      "name": "com.apple.MobileInstallationHelperService"
+    },
+    {
+      "name": "com.apple.MobileSoftwareUpdate.CleanupPreparePathService"
+    },
+    {
+      "name": "com.apple.MobileSoftwareUpdate.CryptegraftService"
+    },
+    {
+      "name": "com.apple.MRTd"
+    },
+    {
+      "name": "com.apple.msrpc.lsarpc"
+    },
+    {
+      "name": "com.apple.msrpc.mdssvc"
+    },
+    {
+      "name": "com.apple.msrpc.netlogon"
+    },
+    {
+      "name": "com.apple.msrpc.srvsvc"
+    },
+    {
+      "name": "com.apple.msrpc.wkssvc"
+    },
+    {
+      "name": "com.apple.multiversed"
+    },
+    {
+      "name": "com.apple.nand_task_scheduler"
+    },
+    {
+      "name": "com.apple.nand.aspcarry"
+    },
+    {
+      "name": "com.apple.nearbyd"
+    },
+    {
+      "name": "com.apple.nehelper"
+    },
+    {
+      "name": "com.apple.nesessionmanager"
+    },
+    {
+      "name": "com.apple.netauth.sys.auth"
+    },
+    {
+      "name": "com.apple.netauth.sys.gui"
+    },
+    {
+      "name": "com.apple.netbiosd"
+    },
+    {
+      "name": "com.apple.NetworkSharing"
+    },
+    {
+      "name": "com.apple.newsyslog"
+    },
+    {
+      "name": "com.apple.nfcd"
+    },
+    {
+      "name": "com.apple.nfrestore"
+    },
+    {
+      "name": "com.apple.nfsconf"
+    },
+    {
+      "name": "com.apple.nfsd"
+    },
+    {
+      "name": "com.apple.nlcd"
+    },
+    {
+      "name": "com.apple.noticeboard.state"
+    },
+    {
+      "name": "com.apple.notifyd"
+    },
+    {
+      "name": "com.apple.nsurlsessiond_privileged"
+    },
+    {
+      "name": "com.apple.oahd"
+    },
+    {
+      "name": "com.apple.oahd-root-helper"
+    },
+    {
+      "name": "com.apple.ocspd"
+    },
+    {
+      "name": "com.apple.online-auth-agent.xpc"
+    },
+    {
+      "name": "com.apple.opendirectoryd"
+    },
+    {
+      "name": "com.apple.osanalytics.osanalyticshelper"
+    },
+    {
+      "name": "com.apple.ospredictiond"
+    },
+    {
+      "name": "com.apple.PerfPowerServices"
+    },
+    {
+      "name": "com.apple.PerfPowerServicesExtended"
+    },
+    {
+      "name": "com.apple.periodic-daily"
+    },
+    {
+      "name": "com.apple.periodic-monthly"
+    },
+    {
+      "name": "com.apple.periodic-weekly"
+    },
+    {
+      "name": "com.apple.pfctl"
+    },
+    {
+      "name": "com.apple.pfd"
+    },
+    {
+      "name": "com.apple.postfix.master"
+    },
+    {
+      "name": "com.apple.postfix.newaliases"
+    },
+    {
+      "name": "com.apple.powerd"
+    },
+    {
+      "name": "com.apple.powerd.swd"
+    },
+    {
+      "name": "com.apple.powerdatad"
+    },
+    {
+      "name": "com.apple.powerlogHelperd"
+    },
+    {
+      "name": "com.apple.PowerUIAgent"
+    },
+    {
+      "name": "com.apple.preferences.timezone.admintool"
+    },
+    {
+      "name": "com.apple.printtool.daemon"
+    },
+    {
+      "name": "com.apple.racoon"
+    },
+    {
+      "name": "com.apple.rapportd"
+    },
+    {
+      "name": "com.apple.recoveryos-lockout-service"
+    },
+    {
+      "name": "com.apple.relatived"
+    },
+    {
+      "name": "com.apple.remoted"
+    },
+    {
+      "name": "com.apple.RemoteDesktop.PrivilegeProxy"
+    },
+    {
+      "name": "com.apple.remotemanagementd"
+    },
+    {
+      "name": "com.apple.RemotePairTool"
+    },
+    {
+      "name": "com.apple.ReportCrash.Root"
+    },
+    {
+      "name": "com.apple.ReportMemoryException"
+    },
+    {
+      "name": "com.apple.retimerd"
+    },
+    {
+      "name": "com.apple.revisiond"
+    },
+    {
+      "name": "com.apple.RFBEventHelper"
+    },
+    {
+      "name": "com.apple.rpcbind"
+    },
+    {
+      "name": "com.apple.rtcreportingd"
+    },
+    {
+      "name": "com.apple.runningboardd"
+    },
+    {
+      "name": "com.apple.SafeEjectGPUStartupDaemon"
+    },
+    {
+      "name": "com.apple.sandboxd"
+    },
+    {
+      "name": "com.apple.SCHelper"
+    },
+    {
+      "name": "com.apple.screensharing"
+    },
+    {
+      "name": "com.apple.scsid"
+    },
+    {
+      "name": "com.apple.secinitd"
+    },
+    {
+      "name": "com.apple.security.agent.login"
+    },
+    {
+      "name": "com.apple.security.agent.login.00000000-0000-0000-0000-0000000186A4"
+    },
+    {
+      "name": "com.apple.security.authhost"
+    },
+    {
+      "name": "com.apple.security.authhost.00000000-0000-0000-0000-0000000186A4"
+    },
+    {
+      "name": "com.apple.security.authtrampoline"
+    },
+    {
+      "name": "com.apple.security.cryptexd"
+    },
+    {
+      "name": "com.apple.security.syspolicy"
+    },
+    {
+      "name": "com.apple.securityd"
+    },
+    {
+      "name": "com.apple.securityd_service"
+    },
+    {
+      "name": "com.apple.securityd.system"
+    },
+    {
+      "name": "com.apple.seld"
+    },
+    {
+      "name": "com.apple.sessionlogoutd"
+    },
+    {
+      "name": "com.apple.signpost.signpost_reporter"
+    },
+    {
+      "name": "com.apple.siri.acousticsignature"
+    },
+    {
+      "name": "com.apple.siriinferenced"
+    },
+    {
+      "name": "com.apple.smb.preferences"
+    },
+    {
+      "name": "com.apple.softwareupdate_firstrun_tasks"
+    },
+    {
+      "name": "com.apple.softwareupdated"
+    },
+    {
+      "name": "com.apple.spindump"
+    },
+    {
+      "name": "com.apple.startupdiskhelper"
+    },
+    {
+      "name": "com.apple.statd.notify"
+    },
+    {
+      "name": "com.apple.storagekitd"
+    },
+    {
+      "name": "com.apple.storereceiptinstaller"
+    },
+    {
+      "name": "com.apple.SubmitDiagInfo"
+    },
+    {
+      "name": "com.apple.suhelperd"
+    },
+    {
+      "name": "com.apple.symptomsd"
+    },
+    {
+      "name": "com.apple.symptomsd-diag"
+    },
+    {
+      "name": "com.apple.sysdiagnose"
+    },
+    {
+      "name": "com.apple.sysdiagnose_helper"
+    },
+    {
+      "name": "com.apple.sysextd"
+    },
+    {
+      "name": "com.apple.syslogd"
+    },
+    {
+      "name": "com.apple.sysmond"
+    },
+    {
+      "name": "com.apple.system_installd"
+    },
+    {
+      "name": "com.apple.systemadministration.writeconfig"
+    },
+    {
+      "name": "com.apple.systemkeychain"
+    },
+    {
+      "name": "com.apple.systempreferences.cacheAssistant"
+    },
+    {
+      "name": "com.apple.systemstats.analysis"
+    },
+    {
+      "name": "com.apple.systemstats.daily"
+    },
+    {
+      "name": "com.apple.systemstats.microstackshot_periodic"
+    },
+    {
+      "name": "com.apple.systemstatusd"
+    },
+    {
+      "name": "com.apple.tailspind"
+    },
+    {
+      "name": "com.apple.taskgated"
+    },
+    {
+      "name": "com.apple.taskgated-helper"
+    },
+    {
+      "name": "com.apple.tccd.system"
+    },
+    {
+      "name": "com.apple.testmanagerd.remote"
+    },
+    {
+      "name": "com.apple.thermald"
+    },
+    {
+      "name": "com.apple.thermalmonitord"
+    },
+    {
+      "name": "com.apple.timed"
+    },
+    {
+      "name": "com.apple.timesync.audioclocksyncd"
+    },
+    {
+      "name": "com.apple.timezoneupdates.tzd"
+    },
+    {
+      "name": "com.apple.tmp_cleaner"
+    },
+    {
+      "name": "com.apple.touchbarserver"
+    },
+    {
+      "name": "com.apple.tracd"
+    },
+    {
+      "name": "com.apple.triald.system"
+    },
+    {
+      "name": "com.apple.trustd"
+    },
+    {
+      "name": "com.apple.trustdFileHelper"
+    },
+    {
+      "name": "com.apple.TrustEvaluationAgent.system"
+    },
+    {
+      "name": "com.apple.tzlinkd"
+    },
+    {
+      "name": "com.apple.ucupdate.plist"
+    },
+    {
+      "name": "com.apple.uninstalld"
+    },
+    {
+      "name": "com.apple.unmountassistant.sysagent"
+    },
+    {
+      "name": "com.apple.UpdateSettings"
+    },
+    {
+      "name": "com.apple.usbd"
+    },
+    {
+      "name": "com.apple.usbmuxd"
+    },
+    {
+      "name": "com.apple.usbsmartcardreaderd"
+    },
+    {
+      "name": "com.apple.UserEventAgent-System"
+    },
+    {
+      "name": "com.apple.UserNotificationCenter"
+    },
+    {
+      "name": "com.apple.Virtualization.AppleVirtualPlatformHIDBridge"
+    },
+    {
+      "name": "com.apple.vsdbutil"
+    },
+    {
+      "name": "com.apple.wallpaper.export"
+    },
+    {
+      "name": "com.apple.warmd"
+    },
+    {
+      "name": "com.apple.watchdogd"
+    },
+    {
+      "name": "com.apple.wifianalyticsd"
+    },
+    {
+      "name": "com.apple.wifiFirmwareLoader"
+    },
+    {
+      "name": "com.apple.wifip2pd"
+    },
+    {
+      "name": "com.apple.wifivelocityd"
+    },
+    {
+      "name": "com.apple.WindowServer"
+    },
+    {
+      "name": "com.apple.WirelessRadioManager"
+    },
+    {
+      "name": "com.apple.wwand"
+    },
+    {
+      "name": "com.apple.xartstorageremoted"
+    },
+    {
+      "name": "com.apple.xpc.roleaccountd"
+    },
+    {
+      "name": "com.apple.xpc.smd"
+    },
+    {
+      "name": "com.apple.xpc.uscwoap"
+    },
+    {
+      "name": "com.apple.XProtect.daemon.scan"
+    },
+    {
+      "name": "com.apple.XProtect.daemon.scan.startup"
+    },
+    {
+      "name": "com.apple.XprotectFramework.PluginService"
+    },
+    {
+      "name": "com.deskpro.loopback1"
+    },
+    {
+      "name": "com.docker.socket"
+    },
+    {
+      "name": "com.jamf.management.daemon"
+    },
+    {
+      "name": "com.jamf.management.enroll"
+    },
+    {
+      "name": "com.jamf.remoteassist.connector"
+    },
+    {
+      "name": "com.teamviewer.Helper"
+    },
+    {
+      "name": "com.teamviewer.UninstallerHelper"
+    },
+    {
+      "name": "com.teamviewer.UninstallerWatcher"
+    },
+    {
+      "name": "com.vanta.metalauncher"
+    },
+    {
+      "name": "com.vix.cron"
+    },
+    {
+      "name": "homebrew.mxcl.dnsmasq"
+    },
+    {
+      "name": "org.cups.cupsd"
+    },
+    {
+      "name": "us.zoom.ZoomDaemon"
+    }
+  ],
+  "plugins": [],
+  "hardware": {
+    "make": "Apple",
+    "model": "MacBook Pro (16-inch, 2019)",
+    "modelIdentifier": "MacBookPro16,1",
+    "serialNumber": "C02ZW1CNMD6W",
+    "processorSpeedMhz": 2300,
+    "processorCount": 1,
+    "coreCount": 8,
+    "processorType": "8-Core Intel Core i9",
+    "processorArchitecture": "x86_64",
+    "busSpeedMhz": 0,
+    "cacheSizeKilobytes": 16384,
+    "networkAdapterType": "IEEE80211",
+    "macAddress": "F8:FF:C2:47:F0:93",
+    "altNetworkAdapterType": "Ethernet",
+    "altMacAddress": "82:1D:CF:E2:88:01",
+    "totalRamMegabytes": 32768,
+    "openRamSlots": 0,
+    "batteryCapacityPercent": 84,
+    "smcVersion": null,
+    "nicSpeed": "100 Mbps",
+    "opticalDrive": null,
+    "bootRom": "2020.61.1.0.0 (iBridge: 21.16.2057.0.0,0)",
+    "bleCapable": false,
+    "supportsIosAppInstalls": false,
+    "appleSilicon": false,
+    "extensionAttributes": []
+  },
+  "certificates": [
+    {
+      "commonName": "615290FA-5092-4AD6-97EE-9991315D4475",
+      "identity": true,
+      "expirationDate": "2026-03-05T08:13:45Z",
+      "username": null,
+      "lifecycleStatus": "ACTIVE",
+      "certificateStatus": "ISSUED",
+      "subjectName": "CN=615290FA-5092-4AD6-97EE-9991315D4475,O=Deskpro",
+      "serialNumber": "1622389305",
+      "sha1Fingerprint": "25705f86db1a3f760e92ac9203885a6fe3154e16",
+      "issuedDate": "2024-03-04T08:13:45Z"
+    },
+    {
+      "commonName": "com.apple.systemdefault",
+      "identity": true,
+      "expirationDate": "2042-06-29T15:20:28Z",
+      "username": null,
+      "lifecycleStatus": "ACTIVE",
+      "certificateStatus": "ISSUED",
+      "subjectName": "CN=com.apple.systemdefault,O=System Identity",
+      "serialNumber": "953923867",
+      "sha1Fingerprint": "66612acf25549dd392f226482ae68ce1a5886337",
+      "issuedDate": "2022-07-04T15:20:28Z"
+    },
+    {
+      "commonName": "mkcert zpawn@zpawn-mac.local",
+      "identity": false,
+      "expirationDate": "2033-04-28T10:40:04Z",
+      "username": null,
+      "lifecycleStatus": "ACTIVE",
+      "certificateStatus": "ISSUED",
+      "subjectName": "O=mkcert development CA,OU=zpawn@zpawn-mac.local,CN=mkcert zpawn@zpawn-mac.local",
+      "serialNumber": "317197137613262954139776024055241664021",
+      "sha1Fingerprint": "75c51cac175f5d173cfd62d3830c4dc5fbe8c46e",
+      "issuedDate": "2023-04-28T10:40:04Z"
+    },
+    {
+      "commonName": "JSS Built-In Signing Certificate",
+      "identity": false,
+      "expirationDate": "2029-02-19T14:43:36Z",
+      "username": null,
+      "lifecycleStatus": "ACTIVE",
+      "certificateStatus": "ISSUED",
+      "subjectName": "OU=DEP,CN=JSS Built-In Signing Certificate",
+      "serialNumber": "1416535992",
+      "sha1Fingerprint": "3fb9c6d0c0fe72685379ce60247fb07990ca20ba",
+      "issuedDate": "2024-02-18T14:43:36Z"
+    },
+    {
+      "commonName": "Deskpro JSS Built-in Certificate Authority",
+      "identity": false,
+      "expirationDate": "2034-02-19T14:43:36Z",
+      "username": null,
+      "lifecycleStatus": "ACTIVE",
+      "certificateStatus": "ISSUED",
+      "subjectName": "CN=Deskpro JSS Built-in Certificate Authority",
+      "serialNumber": "1822925953",
+      "sha1Fingerprint": "8ee26f2ec59e7b3f4ee3d5494022211a72d0a706",
+      "issuedDate": "2024-02-18T14:43:36Z"
+    },
+    {
+      "commonName": "com.apple.kerberos.kdc",
+      "identity": true,
+      "expirationDate": "2042-06-29T15:20:29Z",
+      "username": null,
+      "lifecycleStatus": "ACTIVE",
+      "certificateStatus": "ISSUED",
+      "subjectName": "CN=com.apple.kerberos.kdc,O=System Identity",
+      "serialNumber": "1184331943",
+      "sha1Fingerprint": "9ef05e1bd39cb211139a5a9b8f100fe4a98a506d",
+      "issuedDate": "2022-07-04T15:20:29Z"
+    }
+  ],
+  "attachments": [],
+  "packageReceipts": {
+    "installedByJamfPro": [],
+    "installedByInstallerSwu": [
+      "com.apple.pkg.XProtectPayloads_10_15.16U4286",
+      "com.ushareit.SHAREit",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4281",
+      "com.valvesoftware.SteamLink17",
+      "com.teamviewer.AuthorizationPlugin",
+      "com.apple.pkg.MRTConfigData_10_15.16U4211",
+      "com.vanta.agent",
+      "com.teamviewer.teamviewerUninstallerHelper",
+      "com.tinyspeck.slackmacgap",
+      "org.JamfRemoteAssist.11.2.1-t1707143529",
+      "com.teamviewer.teamviewer",
+      "com.teamviewer.teamviewerPriviledgedHelper",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4277",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4298",
+      "com.teamviewer.teamviewerRestarter",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4296",
+      "com.apple.pkg.XProtectPayloads_10_15.16U4291",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4294",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4293",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4292",
+      "com.apple.pkg.XProtectPayloads_10_15.16U4295",
+      "com.apple.pkg.XProtectPayloads_10_15.16U4279",
+      "com.apple.pkg.ConfigurationUtility",
+      "com.teamviewer.remoteaudiodriver",
+      "com.apple.files.data-template",
+      "TeamViewerUninstaller",
+      "com.teamviewer.teamviewerAgent",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4289",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4287",
+      "com.apple.pkg.XProtectPayloads_10_15.16U4283",
+      "com.apple.pkg.XProtectPlistConfigData_10_15.16U4285",
+      "us.zoom.pkg.videomeeting",
+      "com.jamfsoftware.osxenrollment"
+    ],
+    "cached": []
+  },
+  "fonts": [],
+  "security": {
+    "sipStatus": "ENABLED",
+    "gatekeeperStatus": "APP_STORE_AND_IDENTIFIED_DEVELOPERS",
+    "xprotectVersion": "2187",
+    "autoLoginDisabled": true,
+    "remoteDesktopEnabled": true,
+    "activationLockEnabled": true,
+    "secureBootLevel": "NO_SECURITY",
+    "externalBootLevel": "ALLOW_BOOTING_FROM_EXTERNAL_MEDIA",
+    "bootstrapTokenAllowed": null,
+    "bootstrapTokenEscrowedStatus": "NOT_ESCROWED",
+    "recoveryLockEnabled": false,
+    "firewallEnabled": false
+  },
+  "operatingSystem": {
+    "name": "macOS",
+    "version": "14.2.1",
+    "build": "23C71",
+    "supplementalBuildVersion": "23C71",
+    "rapidSecurityResponse": null,
+    "activeDirectoryStatus": "Not Bound",
+    "fileVault2Status": "BOOT_ENCRYPTED",
+    "softwareUpdateDeviceId": "J152FAP",
+    "extensionAttributes": []
+  },
+  "licensedSoftware": [],
+  "softwareUpdates": [],
+  "groupMemberships": [
+    {
+      "groupId": "1",
+      "groupName": "All Managed Clients",
+      "smartGroup": true
+    }
+  ],
+  "extensionAttributes": [],
+  "contentCaching": {
+    "computerContentCachingInformationId": "1",
+    "parents": [],
+    "alerts": [],
+    "activated": false,
+    "active": false,
+    "actualCacheBytesUsed": 0,
+    "cacheDetails": [],
+    "cacheBytesFree": 781043993600,
+    "cacheBytesLimit": 0,
+    "cacheStatus": "OK",
+    "cacheBytesUsed": 0,
+    "dataMigrationCompleted": false,
+    "dataMigrationProgressPercentage": 0,
+    "dataMigrationError": {
+      "code": 0,
+      "domain": null,
+      "userInfo": []
+    },
+    "maxCachePressureLast1HourPercentage": 0,
+    "personalCacheBytesFree": 781043993600,
+    "personalCacheBytesLimit": 0,
+    "personalCacheBytesUsed": 0,
+    "port": 0,
+    "publicAddress": null,
+    "registrationError": "NOT_ACTIVATED",
+    "registrationResponseCode": 403,
+    "registrationStarted": null,
+    "registrationStatus": "CONTENT_CACHING_FAILED",
+    "restrictedMedia": false,
+    "serverGuid": "71BF1B6E-D5FF-4947-B43E-5E005A18022B",
+    "startupStatus": "FAILED",
+    "tetheratorStatus": "CONTENT_CACHING_DISABLED",
+    "totalBytesAreSince": "2024-03-04T08:35:38Z",
+    "totalBytesDropped": 0,
+    "totalBytesImported": 0,
+    "totalBytesReturnedToChildren": 0,
+    "totalBytesReturnedToClients": 0,
+    "totalBytesReturnedToPeers": 0,
+    "totalBytesStoredFromOrigin": 0,
+    "totalBytesStoredFromParents": 0,
+    "totalBytesStoredFromPeers": 0
+  },
+  "ibeacons": []
+}

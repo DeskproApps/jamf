@@ -38,6 +38,14 @@
       "isRequired": true,
       "isBackendOnly": true,
       "order": 30
+    },
+    "verify_settings": {
+      "title": "",
+      "type": "app_embedded",
+      "options": { "entrypoint": "http://localhost:3000/#/admin/verify_settings" },
+      "isRequired": false,
+      "isBackendOnly": true,
+      "order": 20
     }
   },
   "proxy": {

@@ -1,5 +1,5 @@
 import { isEmpty } from "lodash";
-import { proxyFetch } from "@deskpro/app-sdk";
+import { proxyFetch, adminGenericProxyFetch } from "@deskpro/app-sdk";
 import { BASE_URL, placeholders } from "../../constants";
 import { getQueryParams, getRequestBody } from "../../utils";
 import { JamfError } from "./JamfError";
@@ -12,10 +12,10 @@ const baseRequest: Request = async (client, {
   method = "GET",
   queryParams = {},
   headers: customHeaders,
+  settings,
 }) => {
-  const dpFetch = await proxyFetch(client);
-
-  const baseUrl = rawUrl ? rawUrl : `${BASE_URL}${url || ""}`;
+  const dpFetch = await (!settings ? proxyFetch : adminGenericProxyFetch)(client);
+  const baseUrl = rawUrl ? rawUrl : `${settings?.instance_url || BASE_URL}/api${url || ""}`;
   const params = getQueryParams(queryParams);
   const body = getRequestBody(data);
 

@@ -23,6 +23,7 @@ export type RequestParams = {
   data?: Dict<string>|RequestInit["body"]|V2ProxyRequestInitBody["body"]
   headers?: Dict<string>,
   queryParams?: string|Dict<string>|ParamKeyValuePair[],
+  settings?: Settings,
 };
 
 export type Request = <T>(
@@ -36,6 +37,8 @@ export type FetchOptions = Pick<RequestParams, "method"|"headers"> & V2ProxyRequ
 /** Deskpro types */
 export type Settings = {
   instance_url?: string;
+  client_id?: string;
+  client_secret?: string;
 };
 
 export type UserData = {

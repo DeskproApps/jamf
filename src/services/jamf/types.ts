@@ -36,6 +36,8 @@ export type AccessToken = {
 
 export type JamfProVersion = components["schemas"]["JamfProVersion"];
 
+export type AuthDetails = components["schemas"]["AuthorizationV1"];
+
 export type Computer = components["schemas"]["ComputerInventory"];
 
 export type MobileDevice = components["schemas"]["MobileDeviceResponse"];

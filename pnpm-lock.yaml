@@ -17,9 +17,6 @@ dependencies:
   '@tanstack/react-query':
     specifier: ^4.36.1
     version: 4.36.1(react-dom@18.2.0)(react@18.2.0)
-  iframe-resizer:
-    specifier: ^4.3.9
-    version: 4.3.9
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -3499,11 +3496,6 @@ packages:
     dependencies:
       safer-buffer: 2.1.2
     dev: true
-
-  /iframe-resizer@4.3.9:
-    resolution: {integrity: sha512-MCt+V/THB4a9OcAdrWo5NsI2CRpeMM4ijhTfiLtsdgDJXWYXf62Ve8yO8rKGmYNs991zty/EolYOxActlkfU+A==}
-    engines: {node: '>=0.8.0'}
-    dev: false
 
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}

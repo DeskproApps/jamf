@@ -1,3 +1,5 @@
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import { LoadingSpinner } from "@deskpro/app-sdk";
 import {
   useSetTitle,
@@ -5,11 +7,24 @@ import {
   useLinkedDevices,
   useRegisterElements,
 } from "../../hooks";
+import { entity } from "../../utils";
 import { Home } from "../../components";
 import type { FC } from "react";
+import type { Device } from "../../services/jamf/types";
 
 const HomePage: FC = () => {
+  const navigate = useNavigate();
   const { isLoading, devices } = useLinkedDevices();
+
+  const onNavigateToDevice = useCallback((device: Device) => {
+    const { deviceId, type } = entity.getMeta(device) || {};
+
+    if (!deviceId || !type) {
+      return;
+    }
+
+    navigate(`/devices/${deviceId}/${type}`);
+  }, [navigate]);
 
   useSetTitle("Jamf Pro");
   useBadgeCount(devices);
@@ -37,7 +52,7 @@ const HomePage: FC = () => {
   }
 
   return (
-    <Home devices={devices}/>
+    <Home devices={devices} onNavigateToDevice={onNavigateToDevice}/>
   );
 };
 

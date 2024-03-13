@@ -7,3 +7,4 @@ export { getOptions } from "./getOptions";
 export { isMac } from "./isMac";
 export { isMobile } from "./isMobile";
 export { entity } from "./entity";
+export { isUnlinkPayload } from "./isUnlinkPayload";

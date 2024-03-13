@@ -34,13 +34,13 @@ const MobileDeviceItem: FC<Props> = ({ device, onClickTitle }) => {
       />
       <TwoProperties
         leftLabel="Model"
-        leftText={device.hardware?.model}
+        leftText={get(device, ["hardware", "model"])}
         rightLabel="OS Version"
-        rightText={device.general?.osVersion}
+        rightText={get(device, ["general", "osVersion"])}
       />
       <TwoProperties
         leftLabel="Serial Number"
-        leftText={device.hardware?.serialNumber}
+        leftText={get(device, ["hardware", "serialNumber"])}
         rightLabel="Storage capacity"
         rightText={`${round(get(device, ["hardware", "capacityMb"]) / 1024, 2)}${nbsp}GB`}
       />

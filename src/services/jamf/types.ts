@@ -41,3 +41,9 @@ export type Computer = components["schemas"]["ComputerInventory"];
 export type MobileDevice = components["schemas"]["MobileDeviceResponse"];
 
 export type Device = Computer|MobileDevice;
+
+export type ComputerDetails = components["schemas"]["ComputerInventory"];
+
+export type MobileDeviceDetails = components["schemas"]["MobileDeviceDetailsGetV2"];
+
+export type DeviceDetails = ComputerDetails|MobileDeviceDetails;

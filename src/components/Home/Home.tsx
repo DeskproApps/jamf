@@ -7,15 +7,19 @@ import type { Device } from "../../services/jamf/types";
 
 export type Props = {
   devices: Device[];
+  onNavigateToDevice: (device: Device) => void;
 };
 
-const Home: FC<Props> = ({ devices }) => {
+const Home: FC<Props> = ({ devices, onNavigateToDevice }) => {
   return (
     <Container>
       <NoFoundDevices devices={devices}>
         {(devices) => devices.map((device, idx) => (
           <Fragment key={idx}>
-            <DeviceItem device={device}/>
+            <DeviceItem
+              device={device}
+              onClickTitle={() => onNavigateToDevice(device)}
+            />
             <HorizontalDivider style={{ marginBottom: 8 }} />
           </Fragment>
         ))}

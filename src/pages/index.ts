@@ -2,4 +2,4 @@ export { LoadingAppPage } from "./LoadingAppPage";
 export { HomePage } from "./HomePage";
 export { LoginPage } from "./LoginPage";
 export { LinkDevicesPage } from "./LinkDevicesPage";
-export { DevicesPage } from "./DevicesPage";
+export { DevicePage } from "./DevicePage";

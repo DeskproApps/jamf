@@ -5,3 +5,4 @@ export { useSetTitle } from "./useSetTitle";
 export { useLogout } from "./useLogout";
 export { useExternalLinks } from "./useExternalLinks";
 export { useLinkedDevices } from "./useLinkedDevices";
+export { useUnlinkDevice } from "./useUnlinkService";

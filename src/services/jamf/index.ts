@@ -6,3 +6,4 @@ export { searchComputersService } from "./searchComputersService";
 export { searchMobileDevicesService } from "./searchMobileDevicesService";
 export { getComputerService } from "./getComputerService";
 export { getMobileDeviceService } from "./getMobileDeviceService";
+export { getAuthDetailsService } from "./getAuthDetailsService";

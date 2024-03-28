@@ -10,8 +10,7 @@ class JamfError extends Error {
   data: JamfAPIError;
 
   constructor({ status, data }: InitData) {
-    const message = "JamfError Api Error";
-    super(message);
+    super("Jamf Api Error");
 
     this.data = data;
     this.status = status;

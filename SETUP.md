@@ -28,7 +28,7 @@ Click on "Save" and return and navigate to the "API Clients" tab. Then click on 
 Here, we fill out the following fields:
 1. Provide the __Display Name__ as "Deskpro App" (or any preferred name);
 2. Select the __API Roles__ that we made in the previous step;
-3. Set the __Access Token Lifetime to 300 sec;
+3. Set the __Access Token Lifetime__ to 3600 sec or your preferred duration;
 4. And __Enable API client__.
 
 [![](/docs/assets/setup/setup-jamf-05.png)](/docs/assets/setup/setup-jamf-05.png)

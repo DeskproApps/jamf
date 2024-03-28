@@ -11,7 +11,7 @@ import type { UserContext } from "../../types";
 
 type UseCheckAuth = () => void;
 
-const useCheckAuth: UseCheckAuth = () => {
+const useLoadingApp: UseCheckAuth = () => {
   const navigate = useNavigate();
   const { context } = useDeskproLatestAppContext() as { context: UserContext };
   const dpUserId = useMemo(() => get(context, ["data", "user", "id"]), [context]);
@@ -28,4 +28,4 @@ const useCheckAuth: UseCheckAuth = () => {
   }, [dpUserId]);
 };
 
-export { useCheckAuth };
+export { useLoadingApp };

@@ -52,7 +52,7 @@ export type UserData = {
     isAgent: boolean,
     isConfirmed: boolean,
     emails: string[],
-    primaryEmail: string,
+    primaryEmail?: string,
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     customFields: Dict<any>,
     language: string,

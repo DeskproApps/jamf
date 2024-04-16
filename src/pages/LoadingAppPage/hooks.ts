@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { get, size } from "lodash";
+import { get, size, isEmpty } from "lodash";
 import { useNavigate } from "react-router-dom";
 import {
   useDeskproLatestAppContext,
@@ -7,6 +7,7 @@ import {
 } from "@deskpro/app-sdk";
 import { getEntityListService } from "../../services/deskpro";
 import { getJamfProVersionService } from "../../services/jamf";
+import { tryToLinkAutomatically } from "../../utils";
 import type { UserContext } from "../../types";
 
 type UseCheckAuth = () => void;
@@ -14,18 +15,19 @@ type UseCheckAuth = () => void;
 const useLoadingApp: UseCheckAuth = () => {
   const navigate = useNavigate();
   const { context } = useDeskproLatestAppContext() as { context: UserContext };
-  const dpUserId = useMemo(() => get(context, ["data", "user", "id"]), [context]);
+  const dpUser = useMemo(() => get(context, ["data", "user"]), [context]);
 
   useInitialisedDeskproAppClient((client) => {
-    if (!dpUserId) {
+    if (isEmpty(dpUser)) {
       return;
     }
 
     getJamfProVersionService(client)
-      .then(() => getEntityListService(client, dpUserId))
+      .then(() => tryToLinkAutomatically(client, dpUser))
+      .then(() => getEntityListService(client, dpUser.id))
       .then((entityIds) => navigate(size(entityIds) ? "/home" : "/devices/link"))
       .catch(() => navigate("/login"))
-  }, [dpUserId]);
+  }, [dpUser]);
 };
 
 export { useLoadingApp };

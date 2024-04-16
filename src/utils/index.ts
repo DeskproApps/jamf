@@ -8,3 +8,4 @@ export { isMac } from "./isMac";
 export { isMobile } from "./isMobile";
 export { entity } from "./entity";
 export { isUnlinkPayload } from "./isUnlinkPayload";
+export { tryToLinkAutomatically } from "./tryToLinkAutomatically";

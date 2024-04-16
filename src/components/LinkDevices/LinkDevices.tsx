@@ -28,7 +28,11 @@ const LinkDevices: FC<Props> = ({
   return (
     <>
       <Container>
-        <Search onChange={onChangeSearchQuery} isFetching={isLoading}/>
+        <Search
+          onChange={onChangeSearchQuery}
+          isFetching={isLoading}
+          inputProps={{ placeholder: "Search (exact match only)" }}
+        />
         <Buttons
           isSubmitting={isSubmitting}
           onCancel={onCancel}

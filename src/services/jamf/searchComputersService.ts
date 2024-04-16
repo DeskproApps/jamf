@@ -5,12 +5,13 @@ import type { Pagination, Computer } from "./types";
 
 type Params = {
   q?: string;
+  email?: string;
   ids?: Array<Computer["id"]>;
 };
 
 const searchComputersService = (
   client: IDeskproClient,
-  { q, ids }: Params,
+  { q, ids, email }: Params,
 ) => {
   let filterQuery: string[] = [];
 
@@ -25,6 +26,10 @@ const searchComputersService = (
 
   if (ids) {
     filterQuery = [...filterQuery, ...ids.map((id) => `id==\"${id}\"`)];
+  }
+
+  if (email) {
+    filterQuery = [...filterQuery, `userAndLocation.email==\"${email}\"`];
   }
 
   return baseRequest<Pagination<Computer>>(client, {

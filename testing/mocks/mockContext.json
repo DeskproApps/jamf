@@ -1,6 +1,10 @@
 {
   "type": "user",
-  "settings": {},
+  "settings": {
+    "instance_url": "https://jamf-pro-instans.test",
+    "client_id": "mock_client_id",
+    "client_secret": "mock_client_secret"
+  },
   "data": {
     "user": {
       "id": "1000",

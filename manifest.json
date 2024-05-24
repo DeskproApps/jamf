@@ -1,7 +1,7 @@
 {
   "name": "@deskpro-apps/jamf",
   "title": "Jamf Pro",
-  "description": "",
+  "description": "View your enrolled Apple devices while interacting with tickets to make management and support easier.",
   "version": "0.0.6",
   "scope": "agent",
   "isSingleInstall": false,
@@ -17,7 +17,7 @@
   },
   "settings": {
     "instance_url": {
-      "title": "Jamf Instance URL",
+      "title": "Jamf Pro Instance URL",
       "description": "Enter the URL of your Jamf Pro instance, or \"https://<my_company>.jamfcloud.com\"",
       "validationPattern": "^https?:\\/\\/.+\\..+\\w$",
       "type": "string",
@@ -38,6 +38,14 @@
       "isRequired": true,
       "isBackendOnly": true,
       "order": 30
+    },
+    "verify_settings": {
+      "title": "",
+      "type": "app_embedded",
+      "options": { "entrypoint": "#/admin/verify_settings" },
+      "isRequired": false,
+      "isBackendOnly": true,
+      "order": 40
     }
   },
   "proxy": {

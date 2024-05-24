@@ -6,8 +6,9 @@ import { ErrorBoundary } from "react-error-boundary";
 import { DeskproAppProvider, LoadingSpinner } from "@deskpro/app-sdk";
 import { queryClient } from "./query";
 import { App } from "./App";
-import { ErrorFallback } from "./components";
+import { ErrorBlock, Container } from "./components/common";
 
+import "iframe-resizer/js/iframeResizer.contentWindow.js";
 import "@deskpro/deskpro-ui/dist/deskpro-ui.css";
 import "@deskpro/deskpro-ui/dist/deskpro-custom-icons.css";
 
@@ -18,7 +19,7 @@ root.render((
       <HashRouter>
         <QueryClientProvider client={queryClient}>
           <Suspense fallback={<LoadingSpinner/>}>
-            <ErrorBoundary FallbackComponent={ErrorFallback}>
+            <ErrorBoundary fallbackRender={() => (<Container><ErrorBlock/></Container>)}>
               <App />
             </ErrorBoundary>
           </Suspense>

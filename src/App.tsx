@@ -1,4 +1,7 @@
-import { Routes, Route, useNavigate } from "react-router-dom";
+import { useMemo, useCallback } from "react";
+import { get } from "lodash";
+import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { ErrorBoundary } from "react-error-boundary";
 import { useDebouncedCallback } from "use-debounce";
 import { match } from "ts-pattern";
 import {
@@ -13,30 +16,38 @@ import {
   HomePage,
   LoginPage,
   DevicePage,
+  VerifySettings,
   LoadingAppPage,
   LinkDevicesPage,
 } from "./pages";
+import { ErrorFallback } from "./components";
 import type { FC } from "react";
 import type { EventPayload } from "./types";
 
 const App: FC = () => {
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   const { client } = useDeskproAppClient();
   const { logout, isLoading: isLoadingLogout } = useLogout();
   const { unlink, isLoading: isLoadingUnlink } = useUnlinkDevice();
+  const isAdmin = useMemo(() => pathname.includes("/admin/"), [pathname]);
   const isLoading = isLoadingLogout || isLoadingUnlink;
 
-  useDeskproElements(({ registerElement }) => {
-    registerElement("refresh", { type: "refresh_button" });
-  });
-
-  const debounceElementEvent = useDebouncedCallback((_, __, payload: EventPayload) => {
+  const handlePayload = useCallback((payload: EventPayload) => {
     return match(payload.type)
       .with("changePage", () => isNavigatePayload(payload) && navigate(payload.path))
       .with("logout", logout)
       .with("unlink", () => isUnlinkPayload(payload) && unlink(payload.device))
       .run();
+  }, [navigate, logout, unlink]);
+
+  const debounceElementEvent = useDebouncedCallback((_, __, payload: EventPayload) => {
+    handlePayload(payload);
   }, 500);
+
+  useDeskproElements(({ registerElement }) => {
+    registerElement("refresh", { type: "refresh_button" });
+  });
 
   useDeskproAppEvents({
     onShow: () => {
@@ -54,16 +65,20 @@ const App: FC = () => {
   }
 
   return (
-    <>
+    <ErrorBoundary
+      FallbackComponent={ErrorFallback}
+      onReset={(payload) => handlePayload(get(payload, ["args", 0]))}
+    >
       <Routes>
+        <Route path="/admin/verify_settings" element={<VerifySettings/>} />
         <Route path="/login" element={<LoginPage/>}/>
         <Route path="/home" element={<HomePage/>}/>
         <Route path="/devices/link" element={<LinkDevicesPage/>} />
         <Route path="/devices/:deviceId/:type" element={<DevicePage/>} />
         <Route index element={<LoadingAppPage/>} />
       </Routes>
-      <br/><br/><br/>
-    </>
+      {!isAdmin && (<><br/><br/><br/></>)}
+    </ErrorBoundary>
   );
 };
 

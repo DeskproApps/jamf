@@ -1,5 +1,5 @@
 import { useMemo, useState, useCallback } from "react";
-import { get, size } from "lodash";
+import { get, size, isEmpty } from "lodash";
 import { useNavigate } from "react-router-dom";
 import {
   useDeskproAppClient,
@@ -14,6 +14,7 @@ import {
   getJamfProVersionService,
 } from "../../services/jamf";
 import { useAsyncError } from "../../hooks";
+import { tryToLinkAutomatically } from "../../utils";
 import type { UserContext } from "../../types";
 
 type UseLogin = () => {
@@ -28,10 +29,10 @@ const useLogin: UseLogin = () => {
   const { asyncErrorHandler } = useAsyncError();
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const dpUserId = useMemo(() => get(context, ["data", "user", "id"]), [context]);
+  const dpUser = useMemo(() => get(context, ["data", "user"]), [context]);
 
   const onLogin = useCallback(() => {
-    if (!client || !dpUserId) {
+    if (!client || isEmpty(dpUser)) {
       return;
     }
 
@@ -40,11 +41,12 @@ const useLogin: UseLogin = () => {
     getAccessTokenService(client)
       .then(({ access_token }) => setAccessTokenService(client, access_token))
       .then(() => getJamfProVersionService(client))
-      .then(() => getEntityListService(client, dpUserId))
+      .then(() => tryToLinkAutomatically(client, dpUser))
+      .then(() => getEntityListService(client, dpUser.id))
       .then((entityIds) => navigate(size(entityIds) ? "/home" : "/devices/link"))
       .catch(asyncErrorHandler)
       .finally(() => setIsLoading(false));
-  }, [client, dpUserId, navigate, asyncErrorHandler]);
+  }, [client, dpUser, navigate, asyncErrorHandler]);
 
   return { isLoading, onLogin };
 };

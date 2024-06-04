@@ -8,7 +8,6 @@ import { queryClient } from "./query";
 import { App } from "./App";
 import { ErrorBlock, Container } from "./components/common";
 
-import "iframe-resizer/js/iframeResizer.contentWindow.js";
 import "@deskpro/deskpro-ui/dist/deskpro-ui.css";
 import "@deskpro/deskpro-ui/dist/deskpro-custom-icons.css";
 

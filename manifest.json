@@ -8,6 +8,7 @@
   "hasDevMode": true,
   "serveUrl": "https://apps-cdn.deskpro-service.com/__name__/__version__",
   "targets": [{ "target": "user_sidebar", "entrypoint": "index.html" }],
+  "appStoreUrl": "https://www.deskpro.com/product-embed/apps/jamf-pro",
   "entityAssociations": {
     "linkedJamfDevices": {
       "entity": "person",

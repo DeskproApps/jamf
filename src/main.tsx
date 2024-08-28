@@ -10,20 +10,25 @@ import { ErrorBlock, Container } from "./components/common";
 
 import "@deskpro/deskpro-ui/dist/deskpro-ui.css";
 import "@deskpro/deskpro-ui/dist/deskpro-custom-icons.css";
+import "simplebar/dist/simplebar.min.css";
+import "./main.css";
+import { Scrollbar } from "@deskpro/deskpro-ui";
 
 const root = ReactDOM.createRoot(document.getElementById('root') as Element);
 root.render((
   <StrictMode>
-    <DeskproAppProvider>
-      <HashRouter>
-        <QueryClientProvider client={queryClient}>
-          <Suspense fallback={<LoadingSpinner/>}>
-            <ErrorBoundary fallbackRender={() => (<Container><ErrorBlock/></Container>)}>
-              <App />
-            </ErrorBoundary>
-          </Suspense>
-        </QueryClientProvider>
-      </HashRouter>
-    </DeskproAppProvider>
+    <Scrollbar style={{ height: "100%", width: "100%" }}>
+      <DeskproAppProvider>
+        <HashRouter>
+          <QueryClientProvider client={queryClient}>
+            <Suspense fallback={<LoadingSpinner />}>
+              <ErrorBoundary fallbackRender={() => (<Container><ErrorBlock /></Container>)}>
+                <App />
+              </ErrorBoundary>
+            </Suspense>
+          </QueryClientProvider>
+        </HashRouter>
+      </DeskproAppProvider>
+    </Scrollbar>
   </StrictMode>
 ));

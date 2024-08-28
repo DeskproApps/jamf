@@ -1,6 +1,6 @@
-import { useMemo, useCallback } from "react";
+import { useCallback } from "react";
 import { get } from "lodash";
-import { Routes, Route, useNavigate, useLocation } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import { ErrorBoundary } from "react-error-boundary";
 import { useDebouncedCallback } from "use-debounce";
 import { match } from "ts-pattern";
@@ -26,11 +26,9 @@ import type { EventPayload } from "./types";
 
 const App: FC = () => {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
   const { client } = useDeskproAppClient();
   const { logout, isLoading: isLoadingLogout } = useLogout();
   const { unlink, isLoading: isLoadingUnlink } = useUnlinkDevice();
-  const isAdmin = useMemo(() => pathname.includes("/admin/"), [pathname]);
   const isLoading = isLoadingLogout || isLoadingUnlink;
 
   const handlePayload = useCallback((payload: EventPayload) => {
@@ -77,7 +75,6 @@ const App: FC = () => {
         <Route path="/devices/:deviceId/:type" element={<DevicePage/>} />
         <Route index element={<LoadingAppPage/>} />
       </Routes>
-      {!isAdmin && (<><br/><br/><br/></>)}
     </ErrorBoundary>
   );
 };

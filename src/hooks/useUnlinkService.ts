@@ -29,7 +29,7 @@ const useUnlinkDevice = (): Result => {
 
     setIsLoading(true);
 
-    deleteEntityService(client, dpUserId, deviceId)
+    deleteEntityService(client, dpUserId ?? "", deviceId)
       .then(() => {
         setIsLoading(false);
         navigate("/home");

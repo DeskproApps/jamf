@@ -1,5 +1,5 @@
 import { useCallback } from "react";
-import { get, round } from "lodash";
+import { get } from "lodash";
 import {Link, Title, TwoProperties} from "@deskpro/app-sdk";
 import { nbsp } from "../../constants";
 import { useExternalLinks } from "../../hooks";
@@ -42,7 +42,7 @@ const MobileDeviceItem: FC<Props> = ({ device, onClickTitle }) => {
         leftLabel="Serial Number"
         leftText={get(device, ["hardware", "serialNumber"])}
         rightLabel="Storage capacity"
-        rightText={`${round(get(device, ["hardware", "capacityMb"]) / 1024, 2)}${nbsp}GB`}
+        rightText={`${Number(((device.hardware?.capacityMb ?? 0) / 1024).toFixed(2))}${nbsp}GB`}
       />
     </>
   );

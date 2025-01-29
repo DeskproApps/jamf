@@ -1,4 +1,4 @@
-import { get, round } from "lodash";
+import { get } from "lodash";
 import { Title, Property } from "@deskpro/app-sdk";
 import { useExternalLinks } from "../../../hooks";
 import { nbsp } from "../../../constants";
@@ -44,9 +44,9 @@ const ComputerDevice: FC<Props> = ({ device }) => {
       <Property
         label="Storage Capacity"
         text={`${
-          round(get(device, ["storage", "disks", 0, "sizeMegabytes"]) / 1024, 2)
+          Number(((device.storage?.disks?.[0].sizeMegabytes ?? 0) / 1024).toFixed(2))
         }${nbsp}GB (${
-          round(get(device, ["storage", "disks", 0, "partitions", 0, "availableMegabytes"]) / 1024, 2)
+          Number(((device.storage?.disks?.[0].partitions?.[0].availableMegabytes ?? 0) / 1024).toFixed(2))
         } GB${nbsp}free)`}
       />
     </>

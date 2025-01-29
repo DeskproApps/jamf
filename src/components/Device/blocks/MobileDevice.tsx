@@ -1,4 +1,4 @@
-import { get, round } from "lodash";
+import { get } from "lodash";
 import { Title, Property } from "@deskpro/app-sdk";
 import { useExternalLinks } from "../../../hooks";
 import { nbsp } from "../../../constants";
@@ -47,10 +47,8 @@ const MobileDevice: FC<Props> = ({ device }) => {
       />
       <Property
         label="Storage capacity"
-        text={`${
-          round(get(device, ["ios", "capacityMb"]) / 1024, 2)
-        }${nbsp}GB (${
-          round(get(device, ["ios", "availableMb"]) / 1024, 2)
+        text={`${Number(((device.ios?.capacityMb ?? 0) / 1024).toFixed(2))
+        }${nbsp}GB (${ Number(((device.ios?.availableMb ?? 0) / 1024).toFixed(2))
         } GB${nbsp}free)`}
       />
     </>

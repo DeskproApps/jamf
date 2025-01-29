@@ -51,7 +51,7 @@ const VerifySettings: FC = () => {
         ? <P1>Verified as <Valid>{`<${
           get(authDetails, ["account", "realName"]) || get(authDetails, ["account", "username"])
         }>`}</Valid></P1>
-        : <Invalid type="p1">{error}</Invalid> || ""
+        : <Invalid type="p1">{error}</Invalid>
       }
     </Stack>
   );

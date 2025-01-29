@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { get, size, concat } from "lodash";
 import {
   useQueryWithClient,
@@ -11,7 +10,7 @@ import {
 } from "../services/jamf";
 import { entity, isMac, isMobile } from "../utils";
 import { QueryKey } from "../query";
-import type { UserContext } from "../types";
+import type { Maybe, Settings, UserData } from "../types";
 import type { Device } from "../services/jamf/types";
 
 type UseLinkedDevices = () => {
@@ -20,12 +19,12 @@ type UseLinkedDevices = () => {
 };
 
 const useLinkedDevices: UseLinkedDevices = () => {
-  const { context } = useDeskproLatestAppContext() as { context: UserContext };
-  const dpUserId = useMemo(() => get(context, ["data", "user", "id"]), [context]);
+  const { context } = useDeskproLatestAppContext<UserData, Maybe<Settings>>()
+  const dpUserId = context?.data?.user.id
 
   const linkedIds = useQueryWithClient(
-    [QueryKey.LINKED_DEVICES, dpUserId],
-    (client) => getEntityListService(client, dpUserId),
+    [QueryKey.LINKED_DEVICES, dpUserId ?? ""],
+    (client) => getEntityListService(client, dpUserId ?? ""),
     { enabled: Boolean(dpUserId) },
   );
 

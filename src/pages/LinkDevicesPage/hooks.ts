@@ -1,4 +1,3 @@
-import { get, concat } from "lodash";
 import { useQueryWithClient } from "@deskpro/app-sdk";
 import { searchComputersService, searchMobileDevicesService } from "../../services/jamf";
 import { QueryKey } from "../../query";
@@ -29,10 +28,10 @@ const useSearch: UseSearch = (q) => {
       computers,
       mobileDevices,
     ].some(({ isLoading }) => isLoading) && Boolean(q),
-    devices: concat(
-      get(computers, ["data", "results"]),
-      get(mobileDevices, ["data", "results"]),
-    ).filter(Boolean),
+    devices: [
+      ...(computers.data?.results ?? []),
+      ...(mobileDevices.data?.results ?? []),
+    ].filter(Boolean),
   };
 };
 

@@ -1,7 +1,6 @@
 import { useCallback } from "react";
 import { get } from "lodash";
 import { Routes, Route, useNavigate } from "react-router-dom";
-import { ErrorBoundary } from "react-error-boundary";
 import { useDebouncedCallback } from "use-debounce";
 import { match } from "ts-pattern";
 import {
@@ -23,6 +22,7 @@ import {
 import { ErrorFallback } from "./components";
 import type { FC } from "react";
 import type { EventPayload } from "./types";
+import { ErrorBoundary } from "@sentry/react";
 
 const App: FC = () => {
   const navigate = useNavigate();
@@ -64,7 +64,7 @@ const App: FC = () => {
 
   return (
     <ErrorBoundary
-      FallbackComponent={ErrorFallback}
+      fallback={ErrorFallback}
       onReset={(payload) => handlePayload(get(payload, ["args", 0]))}
     >
       <Routes>

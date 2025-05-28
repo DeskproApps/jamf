@@ -4,14 +4,9 @@ import { Stack } from "@deskpro/deskpro-ui";
 import { DEFAULT_ERROR } from "../../constants";
 import { JamfError } from "../../services/jamf";
 import { Button, Container, ErrorBlock } from "../common";
-import type { FC } from "react";
-import type { FallbackProps } from "react-error-boundary";
+import { FallbackRender } from "@sentry/react";
 
-type Props = Omit<FallbackProps, "error"> & {
-  error: Error|JamfError,
-};
-
-const ErrorFallback: FC<Props> = ({ error, resetErrorBoundary }) => {
+const ErrorFallback: FallbackRender = ({ error, resetError }) => {
   let message = DEFAULT_ERROR;
   let button = null;
   let consoleMessage;
@@ -33,7 +28,7 @@ const ErrorFallback: FC<Props> = ({ error, resetErrorBoundary }) => {
         <Button
           text="Log In"
           intent="secondary"
-          onClick={() => resetErrorBoundary({ type: "changePage", path: "/login" })}
+          onClick={resetError}
         />
       ))
       .otherwise(() => null);

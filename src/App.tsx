@@ -1,5 +1,4 @@
 import { useCallback } from "react";
-import { get } from "lodash";
 import { Routes, Route, useNavigate } from "react-router-dom";
 import { useDebouncedCallback } from "use-debounce";
 import { match } from "ts-pattern";
@@ -19,10 +18,8 @@ import {
   LoadingAppPage,
   LinkDevicesPage,
 } from "./pages";
-import { ErrorFallback } from "./components";
 import type { FC } from "react";
 import type { EventPayload } from "./types";
-import { ErrorBoundary } from "@sentry/react";
 
 const App: FC = () => {
   const navigate = useNavigate();
@@ -63,10 +60,6 @@ const App: FC = () => {
   }
 
   return (
-    <ErrorBoundary
-      fallback={ErrorFallback}
-      onReset={(payload) => handlePayload(get(payload, ["args", 0]))}
-    >
       <Routes>
         <Route path="/admin/verify_settings" element={<VerifySettings/>} />
         <Route path="/login" element={<LoginPage/>}/>
@@ -75,7 +68,6 @@ const App: FC = () => {
         <Route path="/devices/:deviceId/:type" element={<DevicePage/>} />
         <Route index element={<LoadingAppPage/>} />
       </Routes>
-    </ErrorBoundary>
   );
 };
 

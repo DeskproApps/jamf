@@ -1,20 +1,18 @@
+import { Button, Container, ErrorBlock } from "../common";
+import { DEFAULT_ERROR } from "../../constants";
+import { FallbackRender } from "@sentry/react";
 import { get } from "lodash";
+import { JamfError } from "../../services/jamf";
 import { match } from "ts-pattern";
 import { Stack } from "@deskpro/deskpro-ui";
-import { DEFAULT_ERROR } from "../../constants";
-import { JamfError } from "../../services/jamf";
-import { Button, Container, ErrorBlock } from "../common";
-import type { FC } from "react";
-import type { FallbackProps } from "react-error-boundary";
+import { useNavigate } from "react-router-dom";
 
-type Props = Omit<FallbackProps, "error"> & {
-  error: Error|JamfError,
-};
-
-const ErrorFallback: FC<Props> = ({ error, resetErrorBoundary }) => {
+const ErrorFallback: FallbackRender = ({ error, resetError }) => {
   let message = DEFAULT_ERROR;
   let button = null;
   let consoleMessage;
+
+  const navigate = useNavigate()
 
   if (error instanceof JamfError) {
     consoleMessage = error;
@@ -33,7 +31,10 @@ const ErrorFallback: FC<Props> = ({ error, resetErrorBoundary }) => {
         <Button
           text="Log In"
           intent="secondary"
-          onClick={() => resetErrorBoundary({ type: "changePage", path: "/login" })}
+          onClick={() => {
+            resetError()
+            navigate("/login")
+          }}
         />
       ))
       .otherwise(() => null);

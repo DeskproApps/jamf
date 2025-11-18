@@ -20,7 +20,7 @@ export const placeholders = {
   ACCESS_TOKEN: `[user[${ACCESS_TOKEN_PATH}]]`,
   CLIENT_ID: "__client_id__",
   CLIENT_SECRET: "__client_secret__",
-};
+} as const;
 
 /** Jamf Pro */
-export const BASE_URL = `${placeholders.INSTANCE_URL}`;
+export const BASE_URL = placeholders.INSTANCE_URL;

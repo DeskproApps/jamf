@@ -54,7 +54,15 @@
       {
         "url": "__instance_url__/.*",
         "methods": ["GET", "POST"],
-        "timeout": 20
+        "timeout": 20,
+        "settingsInjection": {
+          "client_id": {
+            "body": ["client_id"]
+          },
+          "client_secret": {
+            "body": ["client_secret"]
+          }
+        }
       }
     ]
   }

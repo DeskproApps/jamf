@@ -56,7 +56,7 @@
         "methods": ["GET", "POST"],
         "timeout": 20,
         "settingsInjection": {
-          "app_id": {
+          "client_id": {
             "body": ["client_id"]
           },
           "client_secret": {
